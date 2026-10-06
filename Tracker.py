@@ -5,7 +5,6 @@ import numpy as np
 import cv2
 from datetime import datetime, timezone
 
-# Assicura la presenza della cartella profili
 os.makedirs("profili", exist_ok=True)
 
 def tile_pixel_to_latlon(x, y, z):
@@ -45,7 +44,6 @@ def analizza_radar():
     path_radar = ottieni_timestamp_radar()
     host = "https://tilecache.rainviewer.com"
     
-    # Inizializzazione esplicita delle strutture dati
     macro_strutture = []
     fulmini_reali = []
     
@@ -110,7 +108,6 @@ def analizza_radar():
         except Exception as e:
             print(f"Errore elaborazione tessera {X},{Y}: {e}")
 
-    # Fallback di sicurezza se la lista è vuota
     if not macro_strutture:
         macro_strutture.append({
             "id": "STANDBY_01",
@@ -136,14 +133,5 @@ def analizza_radar():
             "path": f"/{path_radar}"
         },
         "lightning_strikes": fulmini_reali,
-        "macro_structures": macro_strutture
-    }
-
-    with open('centroids.json', 'w', encoding='utf-8') as f:
-        json.dump(payload, f, indent=4, ensure_ascii=False)
-    
-    print(f"[TRACKER] Generati con successo {len(macro_structures)} centroidi in centroids.json")
-
-if __name__ == "__main__":
-    analizza_radar()
+        "macro_structures": macro
     
