@@ -8,6 +8,10 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 os.makedirs("profili", exist_ok=True)
 
+HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+}
+
 def tile_pixel_to_latlon(x, y, z):
     n = 2.0 ** z
     lon_deg = x / n * 360.0 - 180.0
@@ -17,19 +21,19 @@ def tile_pixel_to_latlon(x, y, z):
 
 def ottieni_timestamp_radar():
     try:
-        r = requests.get("https://api.rainviewer.com/public/weather-maps.json", timeout=10)
+        r = requests.get("https://api.rainviewer.com/public/weather-maps.json", headers=HEADERS, timeout=10)
         data = r.json()
         past = data.get("radar", {}).get("past", [])
         if past:
             return past[-1].get("path")
     except Exception:
         pass
-    return "1710000000"
+    return "/v2/radar/1710000000"
 
 def estrai_telemetria_meteo(lat, lon):
     try:
         url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current=pressure_msl,wind_speed_10m,wind_direction_10m"
-        r = requests.get(url, timeout=3)
+        r = requests.get(url, headers=HEADERS, timeout=3)
         if r.status_code == 200:
             cur = r.json().get("current", {})
             return {
@@ -41,29 +45,11 @@ def estrai_telemetria_meteo(lat, lon):
         pass
     return {"pressure": 1013.2, "wind_speed": 0.0, "wind_dir": 0}
 
-def ottieni_fulmini_reali_opensource():
-    fulmini_reali = []
-    try:
-        url_lightning = "https://www.blitzortung.org/live_lightning_data.php"
-        r = requests.get(url_lightning, timeout=4)
-        if r.status_code == 200:
-            data = r.json()
-            for strike in data.get("strikes", []):
-                fulmini_reali.append({
-                    "lat": strike.get("lat"),
-                    "lon": strike.get("lon"),
-                    "intensity": strike.get("amplitude", 0.0),
-                    "time": strike.get("time", datetime.now(timezone.utc).strftime("%H:%M:%S"))
-                })
-    except Exception:
-        pass
-    return fulmini_reali
-
 def ottieni_terremoti_usgs():
     terremoti = []
     try:
         url = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.geojson"
-        r = requests.get(url, timeout=5)
+        r = requests.get(url, headers=HEADERS, timeout=5)
         if r.status_code == 200:
             data = r.json()
             for feature in data.get("features", []):
@@ -86,9 +72,6 @@ def ottieni_terremoti_usgs():
     return terremoti
 
 def salva_immagine_profilo_isodsi_griglia(dati_griglia, nome_file):
-    """
-    Genera il profilo verticale isometrico reale specchiando la riflettività radar effettiva.
-    """
     try:
         canvas = np.zeros((100, 95, 3), dtype=np.uint8)
         for idx, riga in enumerate(dati_griglia):
@@ -116,14 +99,13 @@ def elabora_singola_tessera(args):
     strutture_locali = []
     tile_url = f"{host}{path_radar}/256/5/{X}/{Y}/2/1_1.png"
     try:
-        res = requests.get(tile_url, timeout=3)
+        res = requests.get(tile_url, headers=HEADERS, timeout=3)
         if res.status_code == 200:
             arr = np.frombuffer(res.content, np.uint8)
             img = cv2.imdecode(arr, cv2.IMREAD_COLOR)
             if img is not None:
                 hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
                 
-                # Filtro riflettività rigoroso per celle >= 32 dBZ (Giallo, Arancione, Rosso, Magenta)
                 mask1 = cv2.inRange(hsv, np.array([15, 100, 100]), np.array([35, 255, 255]))
                 mask2 = cv2.inRange(hsv, np.array([0, 120, 120]), np.array([15, 255, 255]))
                 mask3 = cv2.inRange(hsv, np.array([140, 120, 120]), np.array([180, 255, 255]))
@@ -134,7 +116,7 @@ def elabora_singola_tessera(args):
                 local_counter = 1
                 for cnt in contours:
                     area = cv2.contourArea(cnt)
-                    if area > 20: # Soglia minima strutturata per >= 32 dBZ
+                    if area > 20:
                         M = cv2.moments(cnt)
                         if M["m00"] != 0:
                             cX = int(M["m10"] / M["m00"])
@@ -152,11 +134,9 @@ def elabora_singola_tessera(args):
                             wind_dir = telemetria["wind_dir"]
                             rad_dir = np.radians(wind_dir)
                             
-                            # Vettore reale storico (somma incrementale per scansione)
                             hist_lat = round(lat - (wind_spd * 0.001 * np.cos(rad_dir)), 4)
                             hist_lon = round(lon - (wind_spd * 0.001 * np.sin(rad_dir)), 4)
                             
-                            # Vettore predittivo a 4 ore (Rosso)
                             pred_lat_2h = round(lat + (wind_spd * 0.005 * np.cos(rad_dir)), 4)
                             pred_lon_2h = round(lon + (wind_spd * 0.005 * np.sin(rad_dir)), 4)
                             pred_lat_4h = round(lat + (wind_spd * 0.012 * np.cos(rad_dir)), 4)
@@ -189,7 +169,6 @@ def analizza_radar():
     path_radar = ottieni_timestamp_radar()
     host = "https://tilecache.rainviewer.com"
     
-    fulmini_reali = ottieni_fulmini_reali_opensource()
     terremoti_reali = ottieni_terremoti_usgs()
     
     tessere_globali_X = list(range(12, 52))
@@ -218,8 +197,11 @@ def analizza_radar():
 
     payload = {
         "timestamp": datetime.now(timezone.utc).isoformat(),
-        "radar_tile": {"host": host, "path": f"/{path_radar}"},
-        "lightning_strikes": fulmini_reali,
+        "radar_tile": {
+            "host": host,
+            "path": path_radar if path_radar.startswith("/") else f"/{path_radar}"
+        },
+        "lightning_strikes": [],
         "earthquakes": terremoti_reali,
         "macro_structures": macro_strutture
     }
@@ -227,7 +209,7 @@ def analizza_radar():
     with open('centroids.json', 'w', encoding='utf-8') as f:
         json.dump(payload, f, indent=4, ensure_ascii=False)
     
-    print(f"[TRACKER GLOBALE REALE] Sincronizzate {len(macro_strutture)} celle >= 32 dBZ, {len(fulmini_reali)} fulmini e {len(terremoti_reali)} sismi USGS.")
+    print(f"[TRACKER PULITO] Sincronizzati: {len(macro_strutture)} celle >= 32 dBZ e {len(terremoti_reali)} sismi USGS.")
 
 if __name__ == "__main__":
     analizza_radar()
