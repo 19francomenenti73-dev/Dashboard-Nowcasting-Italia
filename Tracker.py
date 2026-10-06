@@ -74,37 +74,27 @@ def ottieni_terremoti_usgs():
         pass
     return terremoti
 
-def salva_immagine_profilo_isometrico(cell_crop, nome_file):
+def salva_forma_cella_trasparente(img_tile, cnt, nome_file):
     try:
-        # Canvas BGRA (4 canali) inizializzato a 0 -> Sfondo Trasparente al 100%
-        canvas = np.zeros((130, 150, 4), dtype=np.uint8)
-        
-        # Testo e assi con opacità piena (255)
-        cv2.putText(canvas, "ECHO PROFILE 3D", (12, 16), cv2.FONT_HERSHEY_SIMPLEX, 0.38, (200, 200, 200, 255), 1, cv2.LINE_AA)
-        cv2.line(canvas, (12, 22), (138, 22), (100, 100, 100, 255), 1, cv2.LINE_AA)
-        cv2.line(canvas, (20, 22), (20, 115), (100, 100, 100, 255), 1, cv2.LINE_AA)
-        
+        x, y, w, h = cv2.boundingRect(cnt)
+        pad = 3
+        h_img, w_img, _ = img_tile.shape
+        x1 = max(0, x - pad)
+        y1 = max(0, y - pad)
+        x2 = min(w_img, x + w + pad)
+        y2 = min(h_img, y + h + pad)
+
+        cell_crop = img_tile[y1:y2, x1:x2]
         if cell_crop.size > 0:
-            resized = cv2.resize(cell_crop, (6, 5), interpolation=cv2.INTER_NEAREST)
-            for idx, riga in enumerate(resized):
-                y_pos = int(105 - (idx * 16))
-                for c_idx, val in enumerate(riga):
-                    if val > 0:
-                        x_pos = int(32 + (c_idx * 18))
-                        if val > 200:
-                            colore = (255, 0, 255, 255) # Magenta estremo (BGRA)
-                        elif val > 150:
-                            colore = (0, 0, 255, 255)   # Rosso
-                        elif val > 100:
-                            colore = (0, 140, 255, 255) # Arancione
-                        else:
-                            colore = (0, 255, 255, 255) # Giallo
-                        
-                        # Barre verticali piene con bordo bianco trasparente
-                        cv2.rectangle(canvas, (x_pos-5, y_pos-10), (x_pos+5, y_pos), colore, -1)
-                        cv2.rectangle(canvas, (x_pos-5, y_pos-10), (x_pos+5, y_pos), (255, 255, 255, 200), 1)
-                        
-        cv2.imwrite(nome_file, canvas)
+            mask_cell = np.zeros((cell_crop.shape[0], cell_crop.shape[1]), dtype=np.uint8)
+            shifted_cnt = cnt - [x1, y1]
+            cv2.drawContours(mask_cell, [shifted_cnt], -1, 255, -1)
+
+            # Converti in BGRA (canale Alpha per trasparenza totale sullo sfondo)
+            bgra = cv2.cvtColor(cell_crop, cv2.COLOR_BGR2BGRA)
+            bgra[:, :, 3] = mask_cell
+
+            cv2.imwrite(nome_file, bgra)
     except Exception:
         pass
 
@@ -142,9 +132,8 @@ def elabora_singola_tessera(args):
                             track_id = f"Core-Z5-{X}-{local_counter}"
                             nome_file_img = f"profili/{track_id}.png"
                             
-                            x_b, y_b, w_b, h_b = cv2.boundingRect(cnt)
-                            cell_crop = mask[y_b:y_b+h_b, x_b:x_b+w_b]
-                            salva_immagine_profilo_isometrico(cell_crop, nome_file_img)
+                            # Salva la sagoma esatta della cella radar con sfondo trasparente
+                            salva_forma_cella_trasparente(img, cnt, nome_file_img)
                             
                             wind_spd = telemetria["wind_speed"]
                             wind_dir = telemetria["wind_dir"]
@@ -230,7 +219,8 @@ def analizza_radar():
     with open('centroids.json', 'w', encoding='utf-8') as f:
         json.dump(payload, f, indent=4, ensure_ascii=False)
     
-    print(f"[TRACKER TRASPARENTE] Sincronizzati: {len(macro_strutture)} celle Core-Z5 e {len(terremoti_reali)} sismi USGS.")
+    print(f"[TRACKER SAGOMA PURA] Sincronizzati: {len(macro_strutture)} celle Core-Z5 e {len(terremoti_reali)} sismi USGS.")
 
 if __name__ == "__main__":
     analizza_radar()
+                                 
