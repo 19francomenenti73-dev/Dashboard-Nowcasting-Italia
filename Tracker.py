@@ -5,7 +5,7 @@ import numpy as np
 import cv2
 from datetime import datetime, timezone
 
-# Assicura la presenza della cartella profili se prevista
+# Assicura la presenza della cartella profili
 os.makedirs("profili", exist_ok=True)
 
 def tile_pixel_to_latlon(x, y, z):
@@ -45,22 +45,11 @@ def analizza_radar():
     path_radar = ottieni_timestamp_radar()
     host = "https://tilecache.rainviewer.com"
     
+    # Inizializzazione esplicita delle strutture dati
     macro_strutture = []
     fulmini_reali = []
     
-    # Esempio di fetch fulmini reali da feed aperti o coordinamento globale
-    try:
-        # Se disponi di un endpoint o feed fulmini, inseriscilo qui. 
-        # In assenza temporanea, strutturiamo l'array pronto per accoglierli in tempo reale.
-        pass
-    except Exception:
-        pass
-
-    # Esempio di scansione coordinate target (puoi estendere il range o focalizzarlo)
-    # Qui simuliamo l'analisi delle celle attive rilevate dai contour OpenCV sulle tile
     cell_counter = 1
-    
-    # Tile di test/scansione di esempio (copertura europea/mediterranea o globale configurabile)
     tessere_da_controllare = [(33, 22, 5), (33, 23, 5), (34, 22, 5)]
 
     for (X, Y, Z) in tessere_da_controllare:
@@ -73,7 +62,6 @@ def analizza_radar():
                 if img is None:
                     continue
                 
-                # Maschera precipitazione basata sui colori della riflettività radar
                 hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
                 lower_bound = np.array([0, 50, 50])
                 upper_bound = np.array([180, 255, 255])
@@ -82,7 +70,7 @@ def analizza_radar():
                 contours, _ = cv2.findContours(mask, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
                 
                 for cnt in contours:
-                    if cv2.contourArea(cnt) > 15: # Filtro celle significative
+                    if cv2.contourArea(cnt) > 15:
                         M = cv2.moments(cnt)
                         if M["m00"] != 0:
                             cX = int(M["m10"] / M["m00"])
@@ -91,7 +79,6 @@ def analizza_radar():
                             lat, lon = tile_pixel_to_latlon(X + cX/256.0, Y + cY/256.0, Z)
                             telemetria = estrai_telemetria_meteo(lat, lon)
                             
-                            # Calcolo vettori storici e predittivi basati sullo spostamento stimato
                             lat_prev_h = lat - 0.03
                             lon_prev_h = lon - 0.03
                             lat_fore_f = lat + 0.04
@@ -123,7 +110,7 @@ def analizza_radar():
         except Exception as e:
             print(f"Errore elaborazione tessera {X},{Y}: {e}")
 
-    # Fallback se non rileva celle nel loop per mantenere la struttura JSON integra
+    # Fallback di sicurezza se la lista è vuota
     if not macro_strutture:
         macro_strutture.append({
             "id": "STANDBY_01",
@@ -149,7 +136,7 @@ def analizza_radar():
             "path": f"/{path_radar}"
         },
         "lightning_strikes": fulmini_reali,
-        "macro_structures": macro_structures
+        "macro_structures": macro_strutture
     }
 
     with open('centroids.json', 'w', encoding='utf-8') as f:
@@ -159,4 +146,4 @@ def analizza_radar():
 
 if __name__ == "__main__":
     analizza_radar()
-                    
+    
