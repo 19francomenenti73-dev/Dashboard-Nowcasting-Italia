@@ -1,39 +1,37 @@
-name: Aggiornamento Radar e Telemetria
+name: Aggiorna Tracker Globale
 
 on:
   schedule:
-    # Esegue lo script ogni 30 minuti in modo automatico
-    - cron: '*/30 * * * *'
+    - cron: '*/30 * * * *'  # Esegue il tracker ogni 30 minuti
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
-  aggiorna-dati:
+  run-tracker:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - name: Checkout repository
+      - name: Checkout del repository
         uses: actions/checkout@v4
 
-      - name: Configura Python
+      - name: Configurazione di Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: Installa dipendenze
+      - name: Installazione dipendenze
         run: |
           python -m pip install --upgrade pip
           pip install requests numpy opencv-python-headless
 
-      - name: Esegui script tracker
+      - name: Esecuzione Tracker.py
         run: python Tracker.py
 
-      - name: Commit e Push dei dati aggiornati
+      - name: Commit e push di JSON e cartella profili
         run: |
-          git config --global user.name "GitHub Actions Bot"
-          git config --global user.email "actions@github.com"
-          git add centroids.json
-          git diff --staged --quiet || git commit -m "Aggiornamento automatico telemetria e centroidi [skip ci]"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add centroids.json profili/
+          git diff --staged --quiet || git commit -m "Aggiornamento automatico dati radar, sismi e profili volumetrici"
           git push
           
