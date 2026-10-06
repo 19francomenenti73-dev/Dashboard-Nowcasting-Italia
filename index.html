@@ -105,10 +105,10 @@
     <div class="bottom-dashboard-bar">
         <div class="brand-title">NOWCASTING ITALIA</div>
         <label class="toggle-label" id="lbl-ir">
-            <input type="checkbox" id="chk-ir" onchange="toggleLayer('ir', this)"> 🛰️️ Sat IR
+            <input type="checkbox" id="chk-ir" onchange="toggleLayer('ir', this)"> 🛰 Sat IR
         </label>
         <label class="toggle-label" id="lbl-lightning">
-            <input type="checkbox" id="chk-lightning" onchange="toggleLayer('lightning', this)"> ⚡ Fulmini
+            <input type="checkbox" id="chk-lightning" onchange="toggleLayer('lightning', this)"> ⚡ Fulmini Reali
         </label>
         <label class="toggle-label" id="lbl-cyclone">
             <input type="checkbox" id="chk-cyclone" onchange="toggleLayer('cyclone', this)"> 🌀 Uragani
@@ -156,7 +156,7 @@
             if (checkbox.checked) {
                 label.classList.add('active');
                 if (type === 'ir') eumetsatIR.addTo(map);
-                if (type === 'lightning') { lightningLayer.addTo(map); fetchGlobalLightning(); }
+                if (type === 'lightning') { lightningLayer.addTo(map); loadRealLightningData(); }
                 if (type === 'cyclone') { cycloneLayer.addTo(map); fetchTropicalCyclones(); }
                 if (type === 'earthquake') { earthquakeLayer.addTo(map); fetchUSGSEarthquakes(); }
             } else {
@@ -168,24 +168,25 @@
             }
         }
 
-        // Fulmini globali distribuiti
-        function fetchGlobalLightning() {
+        // Caricamento fulmini reali da centroids.json (popolati dal backend Python) o feed dedicato
+        function loadRealLightningData() {
             lightningLayer.clearLayers();
-            const center = map.getCenter();
-            const strikes = [
-                [center.lat + 3.2, center.lng + 4.1], [center.lat - 2.5, center.lng + 1.8],
-                [center.lat + 1.1, center.lng - 3.5], [center.lat - 4.2, center.lng - 2.1],
-                [center.lat + 5.0, center.lng - 1.0], [center.lat - 1.5, center.lng + 5.2]
-            ];
-            strikes.forEach((coords, idx) => {
-                L.marker(coords, {
-                    icon: L.divIcon({
-                        className: 'cell-3d-wrapper',
-                        html: '<div style="background:#00ffff; width:8px; height:8px; border-radius:50%; box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; animation: pulse 0.8s infinite;"></div>',
-                        iconSize: [8, 8], iconAnchor: [4, 4]
-                    })
-                }).bindPopup(`<b>[FULMINOMETRO GLOBALE]</b><br>Impatto CG #${idx + 1}<br>Intensità: ~${Math.floor(Math.random()*40 + 20)} kA`).addTo(lightningLayer);
-            });
+            fetch('centroids.json?' + new Date().getTime())
+                .then(res => res.json())
+                .then(data => {
+                    if (data.lightning_strikes && Array.isArray(data.lightning_strikes)) {
+                        data.lightning_strikes.forEach(strike => {
+                            L.marker([strike.lat, strike.lon], {
+                                icon: L.divIcon({
+                                    className: 'cell-3d-wrapper',
+                                    html: '<div style="background:#00ffff; width:8px; height:8px; border-radius:50%; box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; animation: pulse 0.8s infinite;"></div>',
+                                    iconSize: [8, 8], iconAnchor: [4, 4]
+                                })
+                            }).bindPopup(`<b>[FULMINOMETRO REALE]</b><br>Polarità/Intensità: ${strike.intensity || 'N/D'} kA<br>Orario UTC: ${strike.time || 'N/D'}`).addTo(lightningLayer);
+                        });
+                    }
+                })
+                .catch(() => console.log("[HUD] In attesa telemetria fulmini reali..."));
         }
 
         function fetchTropicalCyclones() {
@@ -219,7 +220,6 @@
                         const eqTime = eq.properties.time;
                         const hoursAgo = (now - eqTime) / (1000 * 60 * 60);
 
-                        // Filtro rigoroso 24 ore
                         if (hoursAgo <= 24) {
                             recentCount++;
                             const coords = [eq.geometry.coordinates[1], eq.geometry.coordinates[0]];
@@ -276,7 +276,6 @@
                     }
                     if (data.macro_structures) {
                         data.macro_structures.forEach(item => {
-                            // Celle volumetriche globali
                             const customIcon = L.divIcon({
                                 className: 'cell-3d-wrapper',
                                 html: `<div class="cell-3d-wrapper"><img src="${item.profile_image}" style="width:75px; height:45px; display:block; border:1px solid rgba(0,210,255,0.4); border-radius:3px; box-shadow:0 0 8px rgba(0,0,0,0.8);"></div>`,
@@ -312,14 +311,14 @@
                                 })
                             }).addTo(stormLayer);
 
-                            // Vettore Blu Storico (Percorso reale effettuato accumulato)
+                            // Vettore Blu Storico
                             if (item.history_path && item.history_path.length > 0) {
                                 L.polyline([item.center, ...item.history_path], {
                                     color: '#00d2ff', weight: 4, opacity: 0.9
                                 }).addTo(stormLayer);
                             }
 
-                            // Vettore Rosso Predittivo a 4 ore
+                            // Vettore Rosso Predittivo
                             if (item.forecast_path && item.forecast_path.length > 0) {
                                 L.polyline([item.center, ...item.forecast_path], {
                                     color: '#ff3333', weight: 3, dashArray: '5, 5', opacity: 0.85
