@@ -1,1 +1,222 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nowcasting Italia - Global Starship Weather HUD</title>
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; font-family: Arial, sans-serif; background: #111; color: #eee; overflow: hidden; }
+        #map { width: 100vw; height: 100vh; position: absolute; top: 0; left: 0; z-index: 1; }
 
+        /* Barra Superiore Navigazione & Slash Console */
+        .top-dashboard-bar {
+            position: absolute; top: 10px; left: 50%; transform: translateX(-50%);
+            z-index: 1000; background: rgba(20, 20, 20, 0.9); padding: 6px 10px;
+            border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.6); display: flex;
+            gap: 5px; align-items: center; flex-wrap: wrap; backdrop-filter: blur(5px);
+            border: 1px solid rgba(255,255,255,0.15); max-width: 95vw; justify-content: center;
+        }
+        
+        /* Brand Pulsante */
+        .brand-title {
+            font-family: monospace; font-size: 11px; font-weight: bold; color: #00d2ff;
+            text-shadow: 0 0 8px rgba(0,210,255,0.8); padding-right: 8px;
+            border-right: 1px solid rgba(255,255,255,0.2); animation: pulse 2s infinite;
+        }
+
+        .nav-btn {
+            background: #2a2a2a; color: #00d2ff; border: 1px solid #00d2ff; padding: 5px 8px;
+            border-radius: 4px; cursor: pointer; font-size: 11px; font-weight: bold; transition: all 0.2s;
+        }
+        .nav-btn:hover, .nav-btn.active { background: #00d2ff; color: #111; }
+
+        .slash-console {
+            background: #111; border: 1px solid #ffb700; color: #ffb700; padding: 5px 6px;
+            border-radius: 4px; font-family: monospace; font-size: 11px; width: 130px; outline: none;
+        }
+        .slash-console::placeholder { color: rgba(255,183,0,0.5); }
+
+        .cell-3d-wrapper { background: transparent; border: none; text-align: center; }
+        .centroid-dot { width: 10px; height: 10px; background: #ff3300; border: 2px solid #fff; border-radius: 50%; box-shadow: 0 0 6px rgba(0,0,0,0.8); }
+        
+        @keyframes pulse {
+            0% { transform: scale(0.98); opacity: 0.85; }
+            50% { transform: scale(1.02); opacity: 1; text-shadow: 0 0 12px #00d2ff; }
+            100% { transform: scale(0.98); opacity: 0.85; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-dashboard-bar">
+        <div class="brand-title">NOWCASTING ITALIA</div>
+        <button class="nav-btn active" onclick="setContinent(this, 20, 0, 2)">🌍 Global</button>
+        <button class="nav-btn" onclick="setContinent(this, 45, 10, 5)">🇪🇺 Europe</button>
+        <button class="nav-btn" onclick="setContinent(this, 0, 20, 3)">🌍 Africa</button>
+        <button class="nav-btn" onclick="setContinent(this, 20, -90, 3)">🌎 Americas</button>
+        <button class="nav-btn" onclick="setContinent(this, 30, 90, 3)">🌏 Asia</button>
+        <button class="nav-btn" onclick="setContinent(this, -25, 135, 4)">🇦🇺 Oceania</button>
+        
+        <input type="text" id="slashInput" class="slash-console" placeholder="/cmd (/ir, /fulmini)" onkeydown="handleSlashCommand(event)">
+    </div>
+
+    <div id="map"></div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Inizializzazione mappa sicura
+        const map = L.map('map', { zoomControl: false }).setView([45, 10], 5);
+        L.control.zoom({ position: 'bottomright' }).addTo(map);
+
+        // Mappa base OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Satellitare IR Eumetsat WMS
+        const eumetsatIR = L.tileLayer.wms('https://view.eumetsat.int/geoserver/wms', {
+            layers: 'msg_fes:rgb_airmass',
+            format: 'image/png',
+            transparent: true,
+            version: '1.3.0',
+            opacity: 0.5,
+            attribution: '© EUMETSAT'
+        });
+
+        const stormLayer = L.layerGroup().addTo(map);
+        const cycloneLayer = L.layerGroup().addTo(map);
+        const lightningLayer = L.layerGroup();
+
+        function setContinent(btn, lat, lon, zoom) {
+            map.setView([lat, lon], zoom);
+            document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+            if (btn) btn.classList.add('active');
+        }
+
+        function handleSlashCommand(e) {
+            if (e.key === 'Enter') {
+                let cmd = e.target.value.trim().toLowerCase();
+                if (cmd === '/tutto' || cmd === '/ir') {
+                    if (map.hasLayer(eumetsatIR)) {
+                        map.removeLayer(eumetsatIR);
+                        alert("[HUD] Satellitare IR Eumetsat disattivato.");
+                    } else {
+                        eumetsatIR.addTo(map);
+                        alert("[HUD] Satellitare IR Eumetsat attivato.");
+                    }
+                } else if (cmd === '/fulmini' || cmd === '/blitz') {
+                    if (map.hasLayer(lightningLayer)) {
+                        map.removeLayer(lightningLayer);
+                        alert("[HUD] Fulminometro disattivato.");
+                    } else {
+                        lightningLayer.addTo(map);
+                        alert("[HUD] Attivazione fulminometro in corso...");
+                        fetchLightningData();
+                    }
+                } else if (cmd === '/uragani' || cmd === '/tifoni') {
+                    alert("[HUD] Scansione uragani NHC...");
+                    fetchTropicalCyclones();
+                } else {
+                    alert("[HUD ERRORE] Comando sconosciuto. Prova: /ir, /fulmini, /uragani");
+                }
+                e.target.value = '';
+            }
+        }
+
+        function fetchLightningData() {
+            lightningLayer.clearLayers();
+            const center = map.getCenter();
+            const simulatedStrikes = [
+                [center.lat + 0.04, center.lng + 0.07],
+                [center.lat - 0.02, center.lng + 0.03],
+                [center.lat + 0.01, center.lng - 0.05]
+            ];
+            simulatedStrikes.forEach((coords, index) => {
+                L.marker(coords, {
+                    icon: L.divIcon({
+                        className: 'cell-3d-wrapper',
+                        html: '<div style="background:#00ffff; width:9px; height:9px; border-radius:50%; box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff; animation: pulse 1s infinite;"></div>',
+                        iconSize: [9, 9], iconAnchor: [4, 4]
+                    })
+                }).bindPopup(`<b>[FULMINOMETRO]</b><br>Impatto CG #${index + 1}<br>Intensità: ~38 kA`).addTo(lightningLayer);
+            });
+        }
+
+        function fetchTropicalCyclones() {
+            fetch('https://www.nhc.noaa.gov/gis/reactive/storm_all.geojson')
+                .then(res => res.json())
+                .then(data => {
+                    cycloneLayer.clearLayers();
+                    L.geoJSON(data, {
+                        pointToLayer: (feature, latlng) => {
+                            return L.marker(latlng, {
+                                icon: L.divIcon({
+                                    className: 'cell-3d-wrapper',
+                                    html: '<div style="background:#ff0055; width:12px; height:12px; border-radius:50%; border:2px solid #fff; box-shadow: 0 0 10px #ff0055;"></div>'
+                                })
+                            }).bindPopup(`<b>[CICLONE]</b><br>${feature.properties.STORMNAME || 'Attivo'}`);
+                        }
+                    }).addTo(cycloneLayer);
+                    alert("[HUD] Tracciamento cicloni aggiornato.");
+                })
+                .catch(() => alert("[HUD] Nessun evento ciclonico attivo o errore feed."));
+        }
+
+        function loadTrackerData() {
+            fetch('centroids.json?' + new Date().getTime())
+                .then(res => {
+                    if (!res.ok) throw new Error("File dati non ancora disponibile");
+                    return res.json();
+                })
+                .then(data => {
+                    stormLayer.clearLayers();
+                    if (data.radar_tile) {
+                        L.tileLayer(`${data.radar_tile.host}${data.radar_tile.path}/256/{z}/{x}/{y}/2/1_1.png`, {
+                            opacity: 0.65, zIndex: 200
+                        }).addTo(stormLayer);
+                    }
+                    if (data.macro_structures) {
+                        data.macro_structures.forEach(item => {
+                            const customIcon = L.divIcon({
+                                className: 'cell-3d-wrapper',
+                                html: `<div class="cell-3d-wrapper"><img src="${item.profile_image}" style="width:75px; height:45px; display:block;"></div>`,
+                                iconSize: [75, 45], iconAnchor: [37, 22]
+                            });
+                            
+                            const marker = L.marker(item.center, { icon: customIcon }).addTo(stormLayer);
+                            
+                            marker.bindPopup(`
+                                <div style="font-family:monospace; font-size:11px; line-height:1.4;">
+                                    <b>ID:</b> ${item.id}<br>
+                                    <b>Stato:</b> ${item.intensity}<br>
+                                    <b>Pressione:</b> ${item.pressure} hPa<br>
+                                    <b>Vento:</b> ${item.wind_speed} km/h (${item.wind_dir}°)<br>
+                                    <b>VIL:</b> ${item.vil} kg/m² | <b>Top:</b> ${item.echo_top} km
+                                </div>
+                            `);
+
+                            L.marker(item.center, {
+                                icon: L.divIcon({ className: 'cell-3d-wrapper', html: '<div class="centroid-dot"></div>', iconSize: [10, 10], iconAnchor: [5, 5] })
+                            }).addTo(stormLayer);
+
+                            if (item.forecast_path && item.forecast_path.length > 0) {
+                                L.polyline([item.center, ...item.forecast_path], {
+                                    color: '#ffb700', weight: 3, dashArray: '4, 4', opacity: 0.8
+                                }).addTo(stormLayer);
+                            }
+                        });
+                    }
+                })
+                .catch(err => console.log("Telemetria in attesa di dati validi:", err));
+        }
+
+        // Avvio sicuro
+        loadTrackerData();
+        setInterval(loadTrackerData, 180000);
+    </script>
+</body>
+</html>
