@@ -1,11 +1,21 @@
 {
-    "timestamp": "2026-10-07T14:46:59.259677+00:00",
+    "timestamp": "2026-10-07T15:26:12.506772+00:00",
     "radar_tile": {
         "host": "https://tilecache.rainviewer.com",
-        "path": "/v2/radar/89edfe2023e3"
+        "path": "/v2/radar/4bd2fb48c58e"
     },
     "lightning_strikes": [],
     "earthquakes": [
+        {
+            "id": "us6000u0rr",
+            "mag": 5.2,
+            "place": "Chagos Archipelago region",
+            "time": 1791385165858,
+            "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0rr",
+            "lat": -6.6637,
+            "lon": 72.2362,
+            "depth": 10
+        },
         {
             "id": "us6000u0qw",
             "mag": 4.7,
@@ -159,734 +169,919 @@
         {
             "id": "us6000u0hz",
             "mag": 5.1,
-            "place": "34 km NNW of Bāgeshwar, India",
-            "time": 1791305591296,
+            "place": "34 km NW of Bāgeshwar, India",
+            "time": 1791305592578,
             "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0hz",
-            "lat": 30.1171,
-            "lon": 79.6148,
-            "depth": 10
+            "lat": 30.092,
+            "lon": 79.5618,
+            "depth": 17.838
         },
         {
             "id": "us6000u0hy",
-            "mag": 5.9,
-            "place": "264 km SSW of Severo-Kuril’sk, Russia",
-            "time": 1791305301805,
+            "mag": 5.8,
+            "place": "262 km SSW of Severo-Kuril’sk, Russia",
+            "time": 1791305302347,
             "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u0hy",
-            "lat": 48.4554,
-            "lon": 154.8085,
-            "depth": 26.047
-        },
-        {
-            "id": "us6000u01m",
-            "mag": 4.7,
-            "place": "Chagos Archipelago region",
-            "time": 1791299529822,
-            "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000u01m",
-            "lat": -6.6864,
-            "lon": 72.295,
-            "depth": 10
+            "lat": 48.4437,
+            "lon": 154.9316,
+            "depth": 29
         }
     ],
     "macro_structures": [
         {
-            "id": "Core-Z5-12-1",
-            "lat": -22.3094,
-            "lon": -43.8135,
+            "id": "Core-Z5-14-1",
+            "lat": 32.8057,
+            "lon": -16.9629,
             "center": [
-                -22.3094,
-                -43.8135
+                32.8057,
+                -16.9629
             ],
             "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-12-1.png",
-            "dbz": 34.7,
-            "pressure": 1016.6,
+            "profile_image": "profili/Core-Z5-14-1.png",
+            "dbz": 33.5,
+            "pressure": 1022.4,
             "wind_speed": 8.3,
-            "wind_dir": 24.0,
+            "wind_dir": 358.0,
+            "vil": 24,
+            "echo_top": 8.5,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    32.7933,
+                    -16.9625
+                ],
+                [
+                    32.8057,
+                    -16.9629
+                ]
+            ],
+            "forecast_path": [
+                [
+                    32.8555,
+                    -16.9646
+                ],
+                [
+                    32.9301,
+                    -16.9672
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-16-1",
+            "lat": 40.9135,
+            "lon": 7.8662,
+            "center": [
+                40.9135,
+                7.8662
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-16-1.png",
+            "dbz": 34.4,
+            "pressure": 1013.3,
+            "wind_speed": 26.1,
+            "wind_dir": 213.0,
+            "vil": 39,
+            "echo_top": 8.8,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    40.9463,
+                    7.8875
+                ],
+                [
+                    40.9135,
+                    7.8662
+                ]
+            ],
+            "forecast_path": [
+                [
+                    40.7822,
+                    7.7809
+                ],
+                [
+                    40.5852,
+                    7.653
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-17-1",
+            "lat": 38.9252,
+            "lon": 16.875,
+            "center": [
+                38.9252,
+                16.875
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-17-1.png",
+            "dbz": 33.9,
+            "pressure": 1017.7,
+            "wind_speed": 14.0,
+            "wind_dir": 198.0,
+            "vil": 30,
+            "echo_top": 8.6,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    38.9452,
+                    16.8815
+                ],
+                [
+                    38.9252,
+                    16.875
+                ]
+            ],
+            "forecast_path": [
+                [
+                    38.8453,
+                    16.849
+                ],
+                [
+                    38.7255,
+                    16.8101
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-15-1",
+            "lat": 34.7416,
+            "lon": -2.4609,
+            "center": [
+                34.7416,
+                -2.4609
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-15-1.png",
+            "dbz": 34.7,
+            "pressure": 1016.4,
+            "wind_speed": 10.7,
+            "wind_dir": 348.0,
             "vil": 43,
             "echo_top": 8.9,
             "reliability": "99.9%",
             "eta": "+4h Predittivo",
             "history_path": [
                 [
-                    -22.3208,
-                    -43.8186
+                    34.7259,
+                    -2.4576
                 ],
                 [
-                    -22.3094,
-                    -43.8135
+                    34.7416,
+                    -2.4609
                 ]
             ],
             "forecast_path": [
                 [
-                    -22.2639,
-                    -43.7932
+                    34.8044,
+                    -2.4742
                 ],
                 [
-                    -22.1957,
-                    -43.7629
+                    34.8986,
+                    -2.4943
                 ]
             ]
         },
         {
-            "id": "Core-Z5-16-1",
-            "lat": 40.614,
-            "lon": 6.8115,
+            "id": "Core-Z5-15-2",
+            "lat": 34.8859,
+            "lon": -3.252,
             "center": [
-                40.614,
-                6.8115
+                34.8859,
+                -3.252
             ],
             "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-16-1.png",
-            "dbz": 33.7,
-            "pressure": 1012.6,
-            "wind_speed": 25.4,
-            "wind_dir": 207.0,
-            "vil": 27,
-            "echo_top": 8.5,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    40.6479,
-                    6.8288
-                ],
-                [
-                    40.614,
-                    6.8115
-                ]
-            ],
-            "forecast_path": [
-                [
-                    40.4782,
-                    6.7423
-                ],
-                [
-                    40.2745,
-                    6.6385
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-16-2",
-            "lat": 40.7473,
-            "lon": 7.207,
-            "center": [
-                40.7473,
-                7.207
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-16-2.png",
-            "dbz": 33.7,
-            "pressure": 1012.8,
-            "wind_speed": 28.3,
-            "wind_dir": 207.0,
-            "vil": 27,
-            "echo_top": 8.5,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    40.7851,
-                    7.2263
-                ],
-                [
-                    40.7473,
-                    7.207
-                ]
-            ],
-            "forecast_path": [
-                [
-                    40.596,
-                    7.1299
-                ],
-                [
-                    40.3691,
-                    7.0143
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-20-1",
-            "lat": 28.652,
-            "lon": 45.835,
-            "center": [
-                28.652,
-                45.835
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-20-1.png",
+            "profile_image": "profili/Core-Z5-15-2.png",
             "dbz": 33.3,
-            "pressure": 1012.7,
-            "wind_speed": 10.8,
-            "wind_dir": 30.0,
+            "pressure": 1016.1,
+            "wind_speed": 13.4,
+            "wind_dir": 8.0,
             "vil": 21,
             "echo_top": 8.4,
             "reliability": "99.9%",
             "eta": "+4h Predittivo",
             "history_path": [
                 [
-                    28.638,
-                    45.8269
+                    34.866,
+                    -3.2548
                 ],
                 [
-                    28.652,
-                    45.835
+                    34.8859,
+                    -3.252
                 ]
             ],
             "forecast_path": [
                 [
-                    28.7081,
-                    45.8674
+                    34.9655,
+                    -3.2408
                 ],
                 [
-                    28.7923,
-                    45.916
+                    35.0849,
+                    -3.224
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-15-3",
+            "lat": 35.1019,
+            "lon": -2.417,
+            "center": [
+                35.1019,
+                -2.417
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-15-3.png",
+            "dbz": 33.8,
+            "pressure": 1015.4,
+            "wind_speed": 22.0,
+            "wind_dir": 310.0,
+            "vil": 28,
+            "echo_top": 8.6,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    35.0807,
+                    -2.3917
+                ],
+                [
+                    35.1019,
+                    -2.417
+                ]
+            ],
+            "forecast_path": [
+                [
+                    35.1867,
+                    -2.5181
+                ],
+                [
+                    35.314,
+                    -2.6698
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-15-4",
+            "lat": 39.6734,
+            "lon": -6.7676,
+            "center": [
+                39.6734,
+                -6.7676
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-15-4.png",
+            "dbz": 34.8,
+            "pressure": 1015.3,
+            "wind_speed": 11.2,
+            "wind_dir": 320.0,
+            "vil": 45,
+            "echo_top": 8.9,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    39.6605,
+                    -6.7568
+                ],
+                [
+                    39.6734,
+                    -6.7676
+                ]
+            ],
+            "forecast_path": [
+                [
+                    39.7249,
+                    -6.8108
+                ],
+                [
+                    39.8021,
+                    -6.8756
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-15-5",
+            "lat": 39.741,
+            "lon": -7.6025,
+            "center": [
+                39.741,
+                -7.6025
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-15-5.png",
+            "dbz": 34.2,
+            "pressure": 1015.3,
+            "wind_speed": 5.0,
+            "wind_dir": 330.0,
+            "vil": 36,
+            "echo_top": 8.7,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    39.7345,
+                    -7.5988
+                ],
+                [
+                    39.741,
+                    -7.6025
+                ]
+            ],
+            "forecast_path": [
+                [
+                    39.767,
+                    -7.6175
+                ],
+                [
+                    39.806,
+                    -7.64
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-15-6",
+            "lat": 40.714,
+            "lon": -1.7139,
+            "center": [
+                40.714,
+                -1.7139
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-15-6.png",
+            "dbz": 33.6,
+            "pressure": 1014.2,
+            "wind_speed": 17.9,
+            "wind_dir": 280.0,
+            "vil": 25,
+            "echo_top": 8.5,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    40.7093,
+                    -1.6875
+                ],
+                [
+                    40.714,
+                    -1.7139
+                ]
+            ],
+            "forecast_path": [
+                [
+                    40.7326,
+                    -1.8197
+                ],
+                [
+                    40.7606,
+                    -1.9783
                 ]
             ]
         },
         {
             "id": "Core-Z5-19-1",
-            "lat": 21.1665,
-            "lon": 39.9902,
+            "lat": 21.5757,
+            "lon": 40.1221,
             "center": [
-                21.1665,
-                39.9902
+                21.5757,
+                40.1221
             ],
             "classification": "Cella Convettiva Intensità >= 32 dBZ",
             "profile_image": "profili/Core-Z5-19-1.png",
+            "dbz": 40.2,
+            "pressure": 1013.3,
+            "wind_speed": 8.6,
+            "wind_dir": 296.0,
+            "vil": 132,
+            "echo_top": 10.6,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    21.57,
+                    40.1337
+                ],
+                [
+                    21.5757,
+                    40.1221
+                ]
+            ],
+            "forecast_path": [
+                [
+                    21.5983,
+                    40.0757
+                ],
+                [
+                    21.6322,
+                    40.0062
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-20-1",
+            "lat": 22.7964,
+            "lon": 52.5146,
+            "center": [
+                22.7964,
+                52.5146
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-20-1.png",
+            "dbz": 34.1,
+            "pressure": 1011.8,
+            "wind_speed": 6.7,
+            "wind_dir": 146.0,
+            "vil": 33,
+            "echo_top": 8.7,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    22.8047,
+                    52.509
+                ],
+                [
+                    22.7964,
+                    52.5146
+                ]
+            ],
+            "forecast_path": [
+                [
+                    22.7631,
+                    52.5371
+                ],
+                [
+                    22.7131,
+                    52.5708
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-24-1",
+            "lat": 23.725,
+            "lon": 90.2637,
+            "center": [
+                23.725,
+                90.2637
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-24-1.png",
+            "dbz": 33.9,
+            "pressure": 1015.4,
+            "wind_speed": 1.2,
+            "wind_dir": 141.0,
+            "vil": 30,
+            "echo_top": 8.6,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    23.7264,
+                    90.2626
+                ],
+                [
+                    23.725,
+                    90.2637
+                ]
+            ],
+            "forecast_path": [
+                [
+                    23.7194,
+                    90.2682
+                ],
+                [
+                    23.711,
+                    90.275
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-1",
+            "lat": 36.7389,
+            "lon": 117.6855,
+            "center": [
+                36.7389,
+                117.6855
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-1.png",
+            "dbz": 67.0,
+            "pressure": 1022.7,
+            "wind_speed": 9.4,
+            "wind_dir": 178.0,
+            "vil": 2130,
+            "echo_top": 50.6,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    36.753,
+                    117.685
+                ],
+                [
+                    36.7389,
+                    117.6855
+                ]
+            ],
+            "forecast_path": [
+                [
+                    36.6825,
+                    117.6875
+                ],
+                [
+                    36.598,
+                    117.6904
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-1",
+            "lat": 22.1874,
+            "lon": 108.6768,
+            "center": [
+                22.1874,
+                108.6768
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-1.png",
+            "dbz": 37.2,
+            "pressure": 1018.3,
+            "wind_speed": 10.0,
+            "wind_dir": 15.0,
+            "vil": 84,
+            "echo_top": 9.7,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    22.1729,
+                    108.6729
+                ],
+                [
+                    22.1874,
+                    108.6768
+                ]
+            ],
+            "forecast_path": [
+                [
+                    22.2454,
+                    108.6923
+                ],
+                [
+                    22.3323,
+                    108.7156
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-2",
+            "lat": 27.1374,
+            "lon": 106.875,
+            "center": [
+                27.1374,
+                106.875
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-2.png",
+            "dbz": 46.4,
+            "pressure": 1021.1,
+            "wind_speed": 7.3,
+            "wind_dir": 147.0,
+            "vil": 231,
+            "echo_top": 12.6,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    27.1466,
+                    106.869
+                ],
+                [
+                    27.1374,
+                    106.875
+                ]
+            ],
+            "forecast_path": [
+                [
+                    27.1007,
+                    106.8989
+                ],
+                [
+                    27.0456,
+                    106.9346
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-3",
+            "lat": 28.0332,
+            "lon": 102.1289,
+            "center": [
+                28.0332,
+                102.1289
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-3.png",
+            "dbz": 33.9,
+            "pressure": 1020.3,
+            "wind_speed": 6.3,
+            "wind_dir": 340.0,
+            "vil": 31,
+            "echo_top": 8.6,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    28.0243,
+                    102.1321
+                ],
+                [
+                    28.0332,
+                    102.1289
+                ]
+            ],
+            "forecast_path": [
+                [
+                    28.0687,
+                    102.116
+                ],
+                [
+                    28.122,
+                    102.0966
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-23-1",
+            "lat": 24.0866,
+            "lon": 88.374,
+            "center": [
+                24.0866,
+                88.374
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-23-1.png",
+            "dbz": 34.2,
+            "pressure": 1015.4,
+            "wind_speed": 1.3,
+            "wind_dir": 98.0,
+            "vil": 36,
+            "echo_top": 8.7,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    24.0869,
+                    88.3721
+                ],
+                [
+                    24.0866,
+                    88.374
+                ]
+            ],
+            "forecast_path": [
+                [
+                    24.0855,
+                    88.3817
+                ],
+                [
+                    24.0839,
+                    88.3933
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-23-2",
+            "lat": 25.5226,
+            "lon": 88.418,
+            "center": [
+                25.5226,
+                88.418
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-23-2.png",
+            "dbz": 33.5,
+            "pressure": 1015.5,
+            "wind_speed": 3.4,
+            "wind_dir": 65.0,
+            "vil": 24,
+            "echo_top": 8.5,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    25.5204,
+                    88.4134
+                ],
+                [
+                    25.5226,
+                    88.418
+                ]
+            ],
+            "forecast_path": [
+                [
+                    25.5312,
+                    88.4365
+                ],
+                [
+                    25.5442,
+                    88.4642
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-23-3",
+            "lat": 25.483,
+            "lon": 89.3408,
+            "center": [
+                25.483,
+                89.3408
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-23-3.png",
+            "dbz": 39.6,
+            "pressure": 1015.5,
+            "wind_speed": 3.9,
+            "wind_dir": 53.0,
+            "vil": 122,
+            "echo_top": 10.4,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    25.4795,
+                    89.3361
+                ],
+                [
+                    25.483,
+                    89.3408
+                ]
+            ],
+            "forecast_path": [
+                [
+                    25.4971,
+                    89.3595
+                ],
+                [
+                    25.5182,
+                    89.3875
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-23-4",
+            "lat": 27.9944,
+            "lon": 79.4092,
+            "center": [
+                27.9944,
+                79.4092
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-23-4.png",
+            "dbz": 35.2,
+            "pressure": 1016.4,
+            "wind_speed": 7.6,
+            "wind_dir": 91.0,
+            "vil": 51,
+            "echo_top": 9.0,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    27.9946,
+                    79.3978
+                ],
+                [
+                    27.9944,
+                    79.4092
+                ]
+            ],
+            "forecast_path": [
+                [
+                    27.9936,
+                    79.4548
+                ],
+                [
+                    27.9924,
+                    79.5232
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-23-5",
+            "lat": 28.3044,
+            "lon": 80.376,
+            "center": [
+                28.3044,
+                80.376
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-23-5.png",
             "dbz": 33.7,
-            "pressure": 1011.7,
-            "wind_speed": 10.8,
-            "wind_dir": 270.0,
+            "pressure": 1016.6,
+            "wind_speed": 1.1,
+            "wind_dir": 99.0,
             "vil": 27,
             "echo_top": 8.5,
             "reliability": "99.9%",
             "eta": "+4h Predittivo",
             "history_path": [
                 [
-                    21.1665,
-                    40.0064
+                    28.3047,
+                    80.3744
                 ],
                 [
-                    21.1665,
-                    39.9902
+                    28.3044,
+                    80.376
                 ]
             ],
             "forecast_path": [
                 [
-                    21.1665,
-                    39.9254
+                    28.3034,
+                    80.3825
                 ],
                 [
-                    21.1665,
-                    39.8282
+                    28.3018,
+                    80.3923
                 ]
             ]
         },
         {
-            "id": "Core-Z5-19-2",
-            "lat": 21.494,
-            "lon": 39.9902,
+            "id": "Core-Z5-23-6",
+            "lat": 28.8062,
+            "lon": 80.2441,
             "center": [
-                21.494,
-                39.9902
+                28.8062,
+                80.2441
             ],
             "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-19-2.png",
-            "dbz": 37.3,
-            "pressure": 1011.8,
-            "wind_speed": 4.8,
-            "wind_dir": 243.0,
-            "vil": 85,
-            "echo_top": 9.7,
+            "profile_image": "profili/Core-Z5-23-6.png",
+            "dbz": 33.4,
+            "pressure": 1016.4,
+            "wind_speed": 1.0,
+            "wind_dir": 121.0,
+            "vil": 22,
+            "echo_top": 8.4,
             "reliability": "99.9%",
             "eta": "+4h Predittivo",
             "history_path": [
                 [
-                    21.4973,
-                    39.9966
+                    28.807,
+                    80.2428
                 ],
                 [
-                    21.494,
-                    39.9902
+                    28.8062,
+                    80.2441
                 ]
             ],
             "forecast_path": [
                 [
-                    21.4809,
-                    39.9645
+                    28.8031,
+                    80.2492
                 ],
                 [
-                    21.4613,
-                    39.926
+                    28.7985,
+                    80.257
                 ]
             ]
         },
         {
-            "id": "Core-Z5-15-1",
-            "lat": 34.8859,
-            "lon": -2.5928,
+            "id": "Core-Z5-27-1",
+            "lat": 37.1603,
+            "lon": 125.5518,
             "center": [
-                34.8859,
-                -2.5928
+                37.1603,
+                125.5518
             ],
             "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-15-1.png",
-            "dbz": 35.8,
-            "pressure": 1015.1,
-            "wind_speed": 11.0,
-            "wind_dir": 11.0,
-            "vil": 61,
-            "echo_top": 9.2,
+            "profile_image": "profili/Core-Z5-27-1.png",
+            "dbz": 35.4,
+            "pressure": 1024.4,
+            "wind_speed": 12.2,
+            "wind_dir": 336.0,
+            "vil": 55,
+            "echo_top": 9.1,
             "reliability": "99.9%",
             "eta": "+4h Predittivo",
             "history_path": [
                 [
-                    34.8697,
-                    -2.5959
+                    37.1436,
+                    125.5592
                 ],
                 [
-                    34.8859,
-                    -2.5928
+                    37.1603,
+                    125.5518
                 ]
             ],
             "forecast_path": [
                 [
-                    34.9507,
-                    -2.5802
+                    37.2272,
+                    125.522
                 ],
                 [
-                    35.0479,
-                    -2.5613
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-15-2",
-            "lat": 36.4213,
-            "lon": -2.6367,
-            "center": [
-                36.4213,
-                -2.6367
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-15-2.png",
-            "dbz": 39.6,
-            "pressure": 1013.5,
-            "wind_speed": 37.0,
-            "wind_dir": 251.0,
-            "vil": 121,
-            "echo_top": 10.4,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    36.4394,
-                    -2.5842
-                ],
-                [
-                    36.4213,
-                    -2.6367
-                ]
-            ],
-            "forecast_path": [
-                [
-                    36.349,
-                    -2.8466
-                ],
-                [
-                    36.2406,
-                    -3.1615
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-15-3",
-            "lat": 39.3343,
-            "lon": -7.251,
-            "center": [
-                39.3343,
-                -7.251
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-15-3.png",
-            "dbz": 34.7,
-            "pressure": 1016.0,
-            "wind_speed": 9.2,
-            "wind_dir": 334.0,
-            "vil": 43,
-            "echo_top": 8.9,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    39.3219,
-                    -7.245
-                ],
-                [
-                    39.3343,
-                    -7.251
-                ]
-            ],
-            "forecast_path": [
-                [
-                    39.3839,
-                    -7.2752
-                ],
-                [
-                    39.4583,
-                    -7.3115
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-15-4",
-            "lat": 39.5379,
-            "lon": -2.4609,
-            "center": [
-                39.5379,
-                -2.4609
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-15-4.png",
-            "dbz": 34.6,
-            "pressure": 1014.7,
-            "wind_speed": 16.7,
-            "wind_dir": 276.0,
-            "vil": 41,
-            "echo_top": 8.8,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    39.5353,
-                    -2.436
-                ],
-                [
-                    39.5379,
-                    -2.4609
-                ]
-            ],
-            "forecast_path": [
-                [
-                    39.5484,
-                    -2.5606
-                ],
-                [
-                    39.5641,
-                    -2.71
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-15-5",
-            "lat": 39.8423,
-            "lon": -6.8555,
-            "center": [
-                39.8423,
-                -6.8555
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-15-5.png",
-            "dbz": 34.7,
-            "pressure": 1015.1,
-            "wind_speed": 11.5,
-            "wind_dir": 316.0,
-            "vil": 43,
-            "echo_top": 8.9,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    39.8299,
-                    -6.8435
-                ],
-                [
-                    39.8423,
-                    -6.8555
-                ]
-            ],
-            "forecast_path": [
-                [
-                    39.8919,
-                    -6.9034
-                ],
-                [
-                    39.9664,
-                    -6.9753
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-15-6",
-            "lat": 39.8085,
-            "lon": -7.6904,
-            "center": [
-                39.8085,
-                -7.6904
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-15-6.png",
-            "dbz": 38.4,
-            "pressure": 1015.3,
-            "wind_speed": 6.8,
-            "wind_dir": 342.0,
-            "vil": 103,
-            "echo_top": 10.1,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    39.7988,
-                    -7.6872
-                ],
-                [
-                    39.8085,
-                    -7.6904
-                ]
-            ],
-            "forecast_path": [
-                [
-                    39.8473,
-                    -7.703
-                ],
-                [
-                    39.9055,
-                    -7.7219
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-23-1",
-            "lat": 11.9963,
-            "lon": 81.4746,
-            "center": [
-                11.9963,
-                81.4746
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-23-1.png",
-            "dbz": 33.8,
-            "pressure": 1015.0,
-            "wind_speed": 14.6,
-            "wind_dir": 91.0,
-            "vil": 29,
-            "echo_top": 8.6,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    11.9967,
-                    81.4527
-                ],
-                [
-                    11.9963,
-                    81.4746
-                ]
-            ],
-            "forecast_path": [
-                [
-                    11.9948,
-                    81.5622
-                ],
-                [
-                    11.9925,
-                    81.6936
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-26-1",
-            "lat": 36.8093,
-            "lon": 117.7734,
-            "center": [
-                36.8093,
-                117.7734
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-26-1.png",
-            "dbz": 67.0,
-            "pressure": 1022.5,
-            "wind_speed": 6.7,
-            "wind_dir": 194.0,
-            "vil": 1895,
-            "echo_top": 45.9,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    36.8191,
-                    117.7758
-                ],
-                [
-                    36.8093,
-                    117.7734
-                ]
-            ],
-            "forecast_path": [
-                [
-                    36.7703,
-                    117.7637
-                ],
-                [
-                    36.7118,
-                    117.7491
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-23-1",
-            "lat": 24.0465,
-            "lon": 86.6602,
-            "center": [
-                24.0465,
-                86.6602
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-23-1.png",
-            "dbz": 37.5,
-            "pressure": 1017.0,
-            "wind_speed": 6.0,
-            "wind_dir": 299.0,
-            "vil": 88,
-            "echo_top": 9.8,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    24.0421,
-                    86.6681
-                ],
-                [
-                    24.0465,
-                    86.6602
-                ]
-            ],
-            "forecast_path": [
-                [
-                    24.064,
-                    86.6287
-                ],
-                [
-                    24.0901,
-                    86.5815
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-23-2",
-            "lat": 25.483,
-            "lon": 89.3848,
-            "center": [
-                25.483,
-                89.3848
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-23-2.png",
-            "dbz": 37.9,
-            "pressure": 1015.3,
-            "wind_speed": 2.5,
-            "wind_dir": 45.0,
-            "vil": 94,
-            "echo_top": 9.9,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    25.4803,
-                    89.3821
-                ],
-                [
-                    25.483,
-                    89.3848
-                ]
-            ],
-            "forecast_path": [
-                [
-                    25.4936,
-                    89.3954
-                ],
-                [
-                    25.5095,
-                    89.4113
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-23-3",
-            "lat": 28.2657,
-            "lon": 79.2334,
-            "center": [
-                28.2657,
-                79.2334
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-23-3.png",
-            "dbz": 34.7,
-            "pressure": 1016.3,
-            "wind_speed": 8.8,
-            "wind_dir": 73.0,
-            "vil": 43,
-            "echo_top": 8.9,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    28.2618,
-                    79.2208
-                ],
-                [
-                    28.2657,
-                    79.2334
-                ]
-            ],
-            "forecast_path": [
-                [
-                    28.2811,
-                    79.2839
-                ],
-                [
-                    28.3043,
-                    79.3596
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-26-1",
-            "lat": 4.2149,
-            "lon": 116.6748,
-            "center": [
-                4.2149,
-                116.6748
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-26-1.png",
-            "dbz": 39.1,
-            "pressure": 1015.4,
-            "wind_speed": 5.6,
-            "wind_dir": 310.0,
-            "vil": 113,
-            "echo_top": 10.3,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    4.2095,
-                    116.6812
-                ],
-                [
-                    4.2149,
-                    116.6748
-                ]
-            ],
-            "forecast_path": [
-                [
-                    4.2365,
-                    116.6491
-                ],
-                [
-                    4.2689,
-                    116.6105
+                    37.3275,
+                    125.4774
                 ]
             ]
         },
@@ -901,17 +1096,17 @@
             "classification": "Cella Convettiva Intensità >= 32 dBZ",
             "profile_image": "profili/Core-Z5-26-1.png",
             "dbz": 67.0,
-            "pressure": 1014.9,
-            "wind_speed": 38.5,
-            "wind_dir": 60.0,
-            "vil": 868,
-            "echo_top": 25.4,
+            "pressure": 1014.7,
+            "wind_speed": 38.9,
+            "wind_dir": 65.0,
+            "vil": 851,
+            "echo_top": 25.0,
             "reliability": "99.9%",
             "eta": "+4h Predittivo",
             "history_path": [
                 [
-                    18.4507,
-                    113.5047
+                    18.4549,
+                    113.5018
                 ],
                 [
                     18.4796,
@@ -920,2898 +1115,2742 @@
             ],
             "forecast_path": [
                 [
-                    18.5951,
-                    113.7548
+                    18.5782,
+                    113.7662
                 ],
                 [
-                    18.7684,
-                    114.0548
+                    18.7262,
+                    114.0835
                 ]
             ]
         },
         {
             "id": "Core-Z5-26-2",
-            "lat": 21.6166,
-            "lon": 120.8496,
+            "lat": 19.8081,
+            "lon": 114.8291,
             "center": [
-                21.6166,
-                120.8496
+                19.8081,
+                114.8291
             ],
             "classification": "Cella Convettiva Intensità >= 32 dBZ",
             "profile_image": "profili/Core-Z5-26-2.png",
-            "dbz": 33.4,
-            "pressure": 1017.8,
-            "wind_speed": 44.1,
-            "wind_dir": 51.0,
-            "vil": 23,
-            "echo_top": 8.5,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    21.575,
-                    120.7982
-                ],
-                [
-                    21.6166,
-                    120.8496
-                ]
-            ],
-            "forecast_path": [
-                [
-                    21.7831,
-                    121.0552
-                ],
-                [
-                    22.0329,
-                    121.3637
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-27-1",
-            "lat": -18.979,
-            "lon": 128.6719,
-            "center": [
-                -18.979,
-                128.6719
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-27-1.png",
-            "dbz": 43.3,
-            "pressure": 1013.8,
-            "wind_speed": 7.5,
-            "wind_dir": 312.0,
-            "vil": 181,
-            "echo_top": 11.6,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    -18.9865,
-                    128.6803
-                ],
-                [
-                    -18.979,
-                    128.6719
-                ]
-            ],
-            "forecast_path": [
-                [
-                    -18.9489,
-                    128.6385
-                ],
-                [
-                    -18.9037,
-                    128.5883
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-24-1",
-            "lat": 6.6646,
-            "lon": 100.0195,
-            "center": [
-                6.6646,
-                100.0195
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-24-1.png",
-            "dbz": 33.9,
-            "pressure": 1015.8,
-            "wind_speed": 5.0,
-            "wind_dir": 75.0,
-            "vil": 30,
-            "echo_top": 8.6,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    6.6627,
-                    100.0123
-                ],
-                [
-                    6.6646,
-                    100.0195
-                ]
-            ],
-            "forecast_path": [
-                [
-                    6.6724,
-                    100.0485
-                ],
-                [
-                    6.684,
-                    100.0919
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-24-2",
-            "lat": 8.9719,
-            "lon": 100.0635,
-            "center": [
-                8.9719,
-                100.0635
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-24-2.png",
-            "dbz": 33.9,
-            "pressure": 1016.2,
-            "wind_speed": 13.2,
-            "wind_dir": 329.0,
-            "vil": 30,
-            "echo_top": 8.6,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    8.9549,
-                    100.0737
-                ],
-                [
-                    8.9719,
-                    100.0635
-                ]
-            ],
-            "forecast_path": [
-                [
-                    9.0398,
-                    100.0227
-                ],
-                [
-                    9.1416,
-                    99.9615
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-24-3",
-            "lat": 9.2756,
-            "lon": 99.668,
-            "center": [
-                9.2756,
-                99.668
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-24-3.png",
-            "dbz": 33.8,
-            "pressure": 1016.5,
-            "wind_speed": 3.2,
-            "wind_dir": 183.0,
-            "vil": 28,
-            "echo_top": 8.6,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    9.2804,
-                    99.6683
-                ],
-                [
-                    9.2756,
-                    99.668
-                ]
-            ],
-            "forecast_path": [
-                [
-                    9.2564,
-                    99.667
-                ],
-                [
-                    9.2277,
-                    99.6655
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-24-4",
-            "lat": 9.7524,
-            "lon": 99.8438,
-            "center": [
-                9.7524,
-                99.8438
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-24-4.png",
-            "dbz": 35.8,
-            "pressure": 1016.2,
-            "wind_speed": 7.8,
-            "wind_dir": 328.0,
-            "vil": 60,
-            "echo_top": 9.2,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    9.7425,
-                    99.85
-                ],
-                [
-                    9.7524,
-                    99.8438
-                ]
-            ],
-            "forecast_path": [
-                [
-                    9.7921,
-                    99.819
-                ],
-                [
-                    9.8516,
-                    99.7818
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-28-1",
-            "lat": 11.0059,
-            "lon": 145.3711,
-            "center": [
-                11.0059,
-                145.3711
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-28-1.png",
-            "dbz": 33.6,
-            "pressure": 1011.7,
-            "wind_speed": 13.9,
-            "wind_dir": 260.0,
-            "vil": 25,
-            "echo_top": 8.5,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    11.0095,
-                    145.3916
-                ],
-                [
-                    11.0059,
-                    145.3711
-                ]
-            ],
-            "forecast_path": [
-                [
-                    10.9914,
-                    145.289
-                ],
-                [
-                    10.9697,
-                    145.1658
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-1",
-            "lat": 23.0393,
-            "lon": 108.1934,
-            "center": [
-                23.0393,
-                108.1934
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-1.png",
-            "dbz": 67.0,
-            "pressure": 1018.9,
-            "wind_speed": 9.3,
-            "wind_dir": 72.0,
-            "vil": 644,
-            "echo_top": 20.9,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    23.035,
-                    108.1801
-                ],
-                [
-                    23.0393,
-                    108.1934
-                ]
-            ],
-            "forecast_path": [
-                [
-                    23.0565,
-                    108.2465
-                ],
-                [
-                    23.0824,
-                    108.3261
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-2",
-            "lat": 25.1254,
-            "lon": 109.9512,
-            "center": [
-                25.1254,
-                109.9512
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-2.png",
-            "dbz": 33.7,
-            "pressure": 1021.1,
-            "wind_speed": 6.1,
-            "wind_dir": 5.0,
-            "vil": 27,
-            "echo_top": 8.5,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    25.1163,
-                    109.9504
-                ],
-                [
-                    25.1254,
-                    109.9512
-                ]
-            ],
-            "forecast_path": [
-                [
-                    25.1619,
-                    109.9544
-                ],
-                [
-                    25.2166,
-                    109.9592
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-3",
-            "lat": 27.1765,
-            "lon": 106.8311,
-            "center": [
-                27.1765,
-                106.8311
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-3.png",
-            "dbz": 48.4,
-            "pressure": 1021.0,
-            "wind_speed": 7.9,
-            "wind_dir": 145.0,
-            "vil": 263,
-            "echo_top": 13.3,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    27.1862,
-                    106.8243
-                ],
-                [
-                    27.1765,
-                    106.8311
-                ]
-            ],
-            "forecast_path": [
-                [
-                    27.1377,
-                    106.8583
-                ],
-                [
-                    27.0794,
-                    106.8991
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-4",
-            "lat": 28.072,
-            "lon": 101.9971,
-            "center": [
-                28.072,
-                101.9971
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-4.png",
-            "dbz": 33.8,
-            "pressure": 1022.1,
-            "wind_speed": 3.0,
-            "wind_dir": 253.0,
-            "vil": 29,
-            "echo_top": 8.6,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    28.0733,
-                    102.0014
-                ],
-                [
-                    28.072,
-                    101.9971
-                ]
-            ],
-            "forecast_path": [
-                [
-                    28.0667,
-                    101.9799
-                ],
-                [
-                    28.0588,
-                    101.9541
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-28-1",
-            "lat": -30.7135,
-            "lon": 136.4941,
-            "center": [
-                -30.7135,
-                136.4941
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-28-1.png",
-            "dbz": 35.8,
-            "pressure": 1018.3,
-            "wind_speed": 12.1,
-            "wind_dir": 23.0,
-            "vil": 61,
-            "echo_top": 9.2,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    -30.7302,
-                    136.487
-                ],
-                [
-                    -30.7135,
-                    136.4941
-                ]
-            ],
-            "forecast_path": [
-                [
-                    -30.6467,
-                    136.5225
-                ],
-                [
-                    -30.5464,
-                    136.565
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-27-1",
-            "lat": -34.4884,
-            "lon": 124.3213,
-            "center": [
-                -34.4884,
-                124.3213
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-27-1.png",
-            "dbz": 47.9,
-            "pressure": 1007.8,
-            "wind_speed": 8.5,
-            "wind_dir": 291.0,
-            "vil": 254,
-            "echo_top": 13.1,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    -34.493,
-                    124.3332
-                ],
-                [
-                    -34.4884,
-                    124.3213
-                ]
-            ],
-            "forecast_path": [
-                [
-                    -34.4701,
-                    124.2737
-                ],
-                [
-                    -34.4427,
-                    124.2023
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-27-2",
-            "lat": -32.6949,
-            "lon": 133.5498,
-            "center": [
-                -32.6949,
-                133.5498
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-27-2.png",
-            "dbz": 40.4,
-            "pressure": 1016.6,
-            "wind_speed": 20.2,
-            "wind_dir": 89.0,
-            "vil": 135,
-            "echo_top": 10.7,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    -32.6954,
-                    133.5195
-                ],
-                [
-                    -32.6949,
-                    133.5498
-                ]
-            ],
-            "forecast_path": [
-                [
-                    -32.6928,
-                    133.671
-                ],
-                [
-                    -32.6896,
-                    133.8528
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-26-1",
-            "lat": -35.9958,
-            "lon": 119.3555,
-            "center": [
-                -35.9958,
-                119.3555
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-26-1.png",
-            "dbz": 35.0,
-            "pressure": 1008.7,
-            "wind_speed": 27.7,
-            "wind_dir": 285.0,
-            "vil": 48,
-            "echo_top": 9.0,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    -36.0066,
-                    119.3956
-                ],
-                [
-                    -35.9958,
-                    119.3555
-                ]
-            ],
-            "forecast_path": [
-                [
-                    -35.9528,
-                    119.195
-                ],
-                [
-                    -35.8883,
-                    118.9542
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-26-2",
-            "lat": -35.3532,
-            "lon": 116.7188,
-            "center": [
-                -35.3532,
-                116.7188
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-26-2.png",
-            "dbz": 67.0,
-            "pressure": 1010.3,
-            "wind_speed": 28.9,
-            "wind_dir": 216.0,
-            "vil": 1029,
-            "echo_top": 28.6,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    -35.3181,
-                    116.7443
-                ],
-                [
-                    -35.3532,
-                    116.7188
-                ]
-            ],
-            "forecast_path": [
-                [
-                    -35.4935,
-                    116.6169
-                ],
-                [
-                    -35.7039,
-                    116.464
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-26-3",
-            "lat": -32.9165,
-            "lon": 113.6426,
-            "center": [
-                -32.9165,
-                113.6426
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-26-3.png",
-            "dbz": 36.9,
-            "pressure": 1013.9,
-            "wind_speed": 35.5,
-            "wind_dir": 257.0,
-            "vil": 78,
-            "echo_top": 9.6,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    -32.9045,
-                    113.6945
-                ],
-                [
-                    -32.9165,
-                    113.6426
-                ]
-            ],
-            "forecast_path": [
-                [
-                    -32.9644,
-                    113.4351
-                ],
-                [
-                    -33.0363,
-                    113.1237
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-24-1",
-            "lat": 12.5546,
-            "lon": 100.0635,
-            "center": [
-                12.5546,
-                100.0635
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-24-1.png",
-            "dbz": 35.6,
-            "pressure": 1015.8,
-            "wind_speed": 10.3,
-            "wind_dir": 345.0,
-            "vil": 57,
-            "echo_top": 9.1,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    12.5397,
-                    100.0675
-                ],
-                [
-                    12.5546,
-                    100.0635
-                ]
-            ],
-            "forecast_path": [
-                [
-                    12.6143,
-                    100.0475
-                ],
-                [
-                    12.7038,
-                    100.0235
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-24-2",
-            "lat": 13.1116,
-            "lon": 99.7559,
-            "center": [
-                13.1116,
-                99.7559
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-24-2.png",
-            "dbz": 36.1,
-            "pressure": 1016.6,
-            "wind_speed": 7.9,
-            "wind_dir": 274.0,
-            "vil": 66,
-            "echo_top": 9.3,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    13.1108,
-                    99.7677
-                ],
-                [
-                    13.1116,
-                    99.7559
-                ]
-            ],
-            "forecast_path": [
-                [
-                    13.1149,
-                    99.7086
-                ],
-                [
-                    13.1199,
-                    99.6377
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-24-3",
-            "lat": 13.9234,
-            "lon": 100.8105,
-            "center": [
-                13.9234,
-                100.8105
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-24-3.png",
-            "dbz": 52.6,
-            "pressure": 1015.3,
-            "wind_speed": 1.5,
-            "wind_dir": 194.0,
-            "vil": 330,
-            "echo_top": 14.6,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    13.9256,
-                    100.811
-                ],
-                [
-                    13.9234,
-                    100.8105
-                ]
-            ],
-            "forecast_path": [
-                [
-                    13.9147,
-                    100.8083
-                ],
-                [
-                    13.9016,
-                    100.8051
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-24-4",
-            "lat": 15.9191,
-            "lon": 100.8984,
-            "center": [
-                15.9191,
-                100.8984
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-24-4.png",
-            "dbz": 38.9,
-            "pressure": 1016.3,
-            "wind_speed": 6.8,
-            "wind_dir": 48.0,
-            "vil": 111,
-            "echo_top": 10.2,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    15.9123,
-                    100.8908
-                ],
-                [
-                    15.9191,
-                    100.8984
-                ]
-            ],
-            "forecast_path": [
-                [
-                    15.9464,
-                    100.9287
-                ],
-                [
-                    15.9874,
-                    100.9742
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-24-5",
-            "lat": 18.1876,
-            "lon": 99.3604,
-            "center": [
-                18.1876,
-                99.3604
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-24-5.png",
-            "dbz": 67.0,
-            "pressure": 1016.7,
-            "wind_speed": 4.3,
-            "wind_dir": 222.0,
-            "vil": 3107,
-            "echo_top": 70.1,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    18.1924,
-                    99.3647
-                ],
-                [
-                    18.1876,
-                    99.3604
-                ]
-            ],
-            "forecast_path": [
-                [
-                    18.1684,
-                    99.3431
-                ],
-                [
-                    18.1397,
-                    99.3172
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-28-1",
-            "lat": -20.6739,
-            "lon": 145.2832,
-            "center": [
-                -20.6739,
-                145.2832
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-28-1.png",
-            "dbz": 45.4,
-            "pressure": 1016.0,
-            "wind_speed": 15.3,
-            "wind_dir": 19.0,
-            "vil": 215,
-            "echo_top": 12.3,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    -20.6956,
-                    145.2757
-                ],
-                [
-                    -20.6739,
-                    145.2832
-                ]
-            ],
-            "forecast_path": [
-                [
-                    -20.5871,
-                    145.3131
-                ],
-                [
-                    -20.4569,
-                    145.3579
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-28-2",
-            "lat": -20.5094,
-            "lon": 139.5264,
-            "center": [
-                -20.5094,
-                139.5264
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-28-2.png",
-            "dbz": 34.4,
-            "pressure": 1014.7,
-            "wind_speed": 14.6,
-            "wind_dir": 193.0,
-            "vil": 38,
-            "echo_top": 8.8,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    -20.4881,
-                    139.5313
-                ],
-                [
-                    -20.5094,
-                    139.5264
-                ]
-            ],
-            "forecast_path": [
-                [
-                    -20.5948,
-                    139.5067
-                ],
-                [
-                    -20.7228,
-                    139.4771
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-26-1",
-            "lat": -19.6012,
-            "lon": 118.3447,
-            "center": [
-                -19.6012,
-                118.3447
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-26-1.png",
-            "dbz": 41.6,
-            "pressure": 1013.9,
-            "wind_speed": 31.4,
-            "wind_dir": 247.0,
-            "vil": 153,
-            "echo_top": 11.1,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    -19.5828,
-                    118.3881
-                ],
-                [
-                    -19.6012,
-                    118.3447
-                ]
-            ],
-            "forecast_path": [
-                [
-                    -19.6748,
-                    118.1713
-                ],
-                [
-                    -19.7852,
-                    117.9111
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-26-2",
-            "lat": -19.2697,
-            "lon": 120.3662,
-            "center": [
-                -19.2697,
-                120.3662
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-26-2.png",
-            "dbz": 34.5,
-            "pressure": 1013.4,
-            "wind_speed": 19.9,
-            "wind_dir": 260.0,
-            "vil": 40,
-            "echo_top": 8.8,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    -19.2645,
-                    120.3956
-                ],
-                [
-                    -19.2697,
-                    120.3662
-                ]
-            ],
-            "forecast_path": [
-                [
-                    -19.2904,
-                    120.2486
-                ],
-                [
-                    -19.3215,
-                    120.0722
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-26-3",
-            "lat": -18.3962,
-            "lon": 120.5859,
-            "center": [
-                -18.3962,
-                120.5859
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-26-3.png",
-            "dbz": 39.2,
-            "pressure": 1013.9,
-            "wind_speed": 20.5,
-            "wind_dir": 309.0,
-            "vil": 115,
-            "echo_top": 10.3,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    -18.4156,
-                    120.6098
-                ],
-                [
-                    -18.3962,
-                    120.5859
-                ]
-            ],
-            "forecast_path": [
-                [
-                    -18.3188,
-                    120.4903
-                ],
-                [
-                    -18.2027,
-                    120.3469
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-26-4",
-            "lat": -18.4796,
-            "lon": 121.5088,
-            "center": [
-                -18.4796,
-                121.5088
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-26-4.png",
-            "dbz": 33.9,
-            "pressure": 1013.5,
-            "wind_speed": 21.2,
-            "wind_dir": 296.0,
-            "vil": 31,
-            "echo_top": 8.6,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    -18.4935,
-                    121.5374
-                ],
-                [
-                    -18.4796,
-                    121.5088
-                ]
-            ],
-            "forecast_path": [
-                [
-                    -18.4238,
-                    121.3945
-                ],
-                [
-                    -18.3402,
-                    121.223
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-26-5",
-            "lat": -17.5183,
-            "lon": 120.0146,
-            "center": [
-                -17.5183,
-                120.0146
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-26-5.png",
-            "dbz": 33.7,
-            "pressure": 1014.4,
-            "wind_speed": 15.1,
-            "wind_dir": 287.0,
-            "vil": 27,
-            "echo_top": 8.5,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    -17.5249,
-                    120.0363
-                ],
-                [
-                    -17.5183,
-                    120.0146
-                ]
-            ],
-            "forecast_path": [
-                [
-                    -17.4918,
-                    119.928
-                ],
-                [
-                    -17.4521,
-                    119.798
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-26-6",
-            "lat": -17.7696,
-            "lon": 120.5859,
-            "center": [
-                -17.7696,
-                120.5859
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-26-6.png",
-            "dbz": 35.8,
-            "pressure": 1014.1,
-            "wind_speed": 19.9,
-            "wind_dir": 293.0,
-            "vil": 60,
-            "echo_top": 9.2,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    -17.7813,
-                    120.6134
-                ],
-                [
-                    -17.7696,
-                    120.5859
-                ]
-            ],
-            "forecast_path": [
-                [
-                    -17.7229,
-                    120.476
-                ],
-                [
-                    -17.653,
-                    120.3111
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-26-1",
-            "lat": 22.9989,
-            "lon": 113.2471,
-            "center": [
-                22.9989,
-                113.2471
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-26-1.png",
-            "dbz": 35.1,
-            "pressure": 1018.4,
-            "wind_speed": 6.1,
-            "wind_dir": 3.0,
-            "vil": 50,
-            "echo_top": 9.0,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    22.9898,
-                    113.2466
-                ],
-                [
-                    22.9989,
-                    113.2471
-                ]
-            ],
-            "forecast_path": [
-                [
-                    23.0354,
-                    113.249
-                ],
-                [
-                    23.0903,
-                    113.2519
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-26-2",
-            "lat": 23.4431,
-            "lon": 121.5088,
-            "center": [
-                23.4431,
-                121.5088
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-26-2.png",
-            "dbz": 33.6,
-            "pressure": 1020.8,
-            "wind_speed": 8.6,
-            "wind_dir": 307.0,
-            "vil": 26,
-            "echo_top": 8.5,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    23.4353,
-                    121.5191
-                ],
-                [
-                    23.4431,
-                    121.5088
-                ]
-            ],
-            "forecast_path": [
-                [
-                    23.4742,
-                    121.4676
-                ],
-                [
-                    23.5207,
-                    121.4058
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-26-3",
-            "lat": 23.4834,
-            "lon": 112.7637,
-            "center": [
-                23.4834,
-                112.7637
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-26-3.png",
-            "dbz": 33.9,
-            "pressure": 1019.0,
-            "wind_speed": 5.0,
-            "wind_dir": 2.0,
-            "vil": 31,
-            "echo_top": 8.6,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    23.4759,
-                    112.7634
-                ],
-                [
-                    23.4834,
-                    112.7637
-                ]
-            ],
-            "forecast_path": [
-                [
-                    23.5134,
-                    112.7647
-                ],
-                [
-                    23.5584,
-                    112.7663
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-26-4",
-            "lat": 23.8054,
-            "lon": 121.9482,
-            "center": [
-                23.8054,
-                121.9482
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-26-4.png",
-            "dbz": 36.0,
-            "pressure": 1019.6,
-            "wind_speed": 25.6,
-            "wind_dir": 26.0,
-            "vil": 64,
-            "echo_top": 9.3,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    23.7709,
-                    121.9314
-                ],
-                [
-                    23.8054,
-                    121.9482
-                ]
-            ],
-            "forecast_path": [
-                [
-                    23.9435,
-                    122.0155
-                ],
-                [
-                    24.1505,
-                    122.1165
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-26-5",
-            "lat": 26.9417,
-            "lon": 113.2471,
-            "center": [
-                26.9417,
-                113.2471
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-26-5.png",
-            "dbz": 39.4,
-            "pressure": 1021.3,
-            "wind_speed": 0.6,
-            "wind_dir": 342.0,
-            "vil": 119,
-            "echo_top": 10.4,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    26.9408,
-                    113.2474
-                ],
-                [
-                    26.9417,
-                    113.2471
-                ]
-            ],
-            "forecast_path": [
-                [
-                    26.9451,
-                    113.246
-                ],
-                [
-                    26.9503,
-                    113.2443
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-26-6",
-            "lat": 31.4662,
-            "lon": 116.1475,
-            "center": [
-                31.4662,
-                116.1475
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-26-6.png",
-            "dbz": 58.9,
-            "pressure": 1023.4,
-            "wind_speed": 4.8,
-            "wind_dir": 191.0,
-            "vil": 431,
-            "echo_top": 16.6,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    31.4733,
-                    116.1489
-                ],
-                [
-                    31.4662,
-                    116.1475
-                ]
-            ],
-            "forecast_path": [
-                [
-                    31.4379,
-                    116.142
-                ],
-                [
-                    31.3955,
-                    116.1338
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-26-7",
-            "lat": 31.6534,
-            "lon": 114.6533,
-            "center": [
-                31.6534,
-                114.6533
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-26-7.png",
-            "dbz": 53.1,
-            "pressure": 1022.6,
-            "wind_speed": 3.9,
-            "wind_dir": 196.0,
-            "vil": 337,
-            "echo_top": 14.7,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    31.659,
-                    114.6549
-                ],
-                [
-                    31.6534,
-                    114.6533
-                ]
-            ],
-            "forecast_path": [
-                [
-                    31.6309,
-                    114.6469
-                ],
-                [
-                    31.5972,
-                    114.6372
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-1",
-            "lat": 5.5285,
-            "lon": 101.8213,
-            "center": [
-                5.5285,
-                101.8213
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-1.png",
-            "dbz": 40.6,
-            "pressure": 1018.1,
-            "wind_speed": 3.1,
-            "wind_dir": 239.0,
-            "vil": 138,
-            "echo_top": 10.8,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    5.5309,
-                    101.8253
-                ],
-                [
-                    5.5285,
-                    101.8213
-                ]
-            ],
-            "forecast_path": [
-                [
-                    5.5189,
-                    101.8054
-                ],
-                [
-                    5.5046,
-                    101.7814
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-2",
-            "lat": 6.1842,
-            "lon": 102.7002,
-            "center": [
-                6.1842,
-                102.7002
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-2.png",
-            "dbz": 33.6,
+            "dbz": 35.9,
             "pressure": 1015.9,
-            "wind_speed": 2.8,
-            "wind_dir": 255.0,
-            "vil": 25,
-            "echo_top": 8.5,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    6.1853,
-                    102.7043
-                ],
-                [
-                    6.1842,
-                    102.7002
-                ]
-            ],
-            "forecast_path": [
-                [
-                    6.1799,
-                    102.684
-                ],
-                [
-                    6.1733,
-                    102.6596
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-3",
-            "lat": 8.8851,
-            "lon": 107.4463,
-            "center": [
-                8.8851,
-                107.4463
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-3.png",
-            "dbz": 33.8,
-            "pressure": 1015.3,
-            "wind_speed": 10.7,
-            "wind_dir": 306.0,
-            "vil": 29,
-            "echo_top": 8.6,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    8.8757,
-                    107.4593
-                ],
-                [
-                    8.8851,
-                    107.4463
-                ]
-            ],
-            "forecast_path": [
-                [
-                    8.9228,
-                    107.3944
-                ],
-                [
-                    8.9794,
-                    107.3165
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-4",
-            "lat": 9.4057,
-            "lon": 108.0176,
-            "center": [
-                9.4057,
-                108.0176
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-4.png",
-            "dbz": 33.3,
-            "pressure": 1015.7,
-            "wind_speed": 6.4,
-            "wind_dir": 280.0,
-            "vil": 21,
-            "echo_top": 8.4,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    9.404,
-                    108.0271
-                ],
-                [
-                    9.4057,
-                    108.0176
-                ]
-            ],
-            "forecast_path": [
-                [
-                    9.4124,
-                    107.9798
-                ],
-                [
-                    9.4224,
-                    107.9231
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-5",
-            "lat": 9.7091,
-            "lon": 107.0068,
-            "center": [
-                9.7091,
-                107.0068
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-5.png",
-            "dbz": 35.6,
-            "pressure": 1015.4,
-            "wind_speed": 5.6,
-            "wind_dir": 303.0,
-            "vil": 58,
-            "echo_top": 9.2,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    9.7045,
-                    107.0138
-                ],
-                [
-                    9.7091,
-                    107.0068
-                ]
-            ],
-            "forecast_path": [
-                [
-                    9.7274,
-                    106.9786
-                ],
-                [
-                    9.7548,
-                    106.9364
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-6",
-            "lat": 10.0987,
-            "lon": 106.2598,
-            "center": [
-                10.0987,
-                106.2598
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-6.png",
-            "dbz": 47.2,
-            "pressure": 1015.3,
-            "wind_speed": 0.6,
-            "wind_dir": 214.0,
-            "vil": 244,
-            "echo_top": 12.9,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    10.0994,
-                    106.2603
-                ],
-                [
-                    10.0987,
-                    106.2598
-                ]
-            ],
-            "forecast_path": [
-                [
-                    10.0957,
-                    106.2578
-                ],
-                [
-                    10.0912,
-                    106.2548
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-7",
-            "lat": 10.2717,
-            "lon": 107.9736,
-            "center": [
-                10.2717,
-                107.9736
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-7.png",
-            "dbz": 67.0,
-            "pressure": 1015.0,
-            "wind_speed": 6.5,
-            "wind_dir": 222.0,
-            "vil": 579,
-            "echo_top": 19.6,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    10.2789,
-                    107.9801
-                ],
-                [
-                    10.2717,
-                    107.9736
-                ]
-            ],
-            "forecast_path": [
-                [
-                    10.2427,
-                    107.9475
-                ],
-                [
-                    10.1992,
-                    107.9084
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-8",
-            "lat": 10.747,
-            "lon": 106.6992,
-            "center": [
-                10.747,
-                106.6992
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-8.png",
-            "dbz": 34.5,
-            "pressure": 1013.2,
-            "wind_speed": 35.0,
-            "wind_dir": 225.0,
-            "vil": 40,
-            "echo_top": 8.8,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    10.7841,
-                    106.7363
-                ],
-                [
-                    10.747,
-                    106.6992
-                ]
-            ],
-            "forecast_path": [
-                [
-                    10.5985,
-                    106.5507
-                ],
-                [
-                    10.3758,
-                    106.328
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-9",
-            "lat": 11.049,
-            "lon": 108.6328,
-            "center": [
-                11.049,
-                108.6328
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-9.png",
-            "dbz": 39.2,
-            "pressure": 1013.2,
-            "wind_speed": 35.0,
-            "wind_dir": 225.0,
-            "vil": 116,
-            "echo_top": 10.3,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    11.0861,
-                    108.6699
-                ],
-                [
-                    11.049,
-                    108.6328
-                ]
-            ],
-            "forecast_path": [
-                [
-                    10.9005,
-                    108.4843
-                ],
-                [
-                    10.6778,
-                    108.2616
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-10",
-            "lat": 11.1353,
-            "lon": 107.4902,
-            "center": [
-                11.1353,
-                107.4902
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-10.png",
-            "dbz": 40.1,
-            "pressure": 1013.2,
-            "wind_speed": 35.0,
-            "wind_dir": 225.0,
-            "vil": 130,
-            "echo_top": 10.6,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    11.1724,
-                    107.5273
-                ],
-                [
-                    11.1353,
-                    107.4902
-                ]
-            ],
-            "forecast_path": [
-                [
-                    10.9868,
-                    107.3417
-                ],
-                [
-                    10.7641,
-                    107.119
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-11",
-            "lat": 10.6174,
-            "lon": 105.5127,
-            "center": [
-                10.6174,
-                105.5127
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-11.png",
-            "dbz": 39.8,
-            "pressure": 1015.1,
-            "wind_speed": 3.1,
-            "wind_dir": 114.0,
-            "vil": 125,
-            "echo_top": 10.5,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    10.6193,
-                    105.5085
-                ],
-                [
-                    10.6174,
-                    105.5127
-                ]
-            ],
-            "forecast_path": [
-                [
-                    10.6098,
-                    105.5297
-                ],
-                [
-                    10.5985,
-                    105.5552
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-28-1",
-            "lat": 11.6092,
-            "lon": 145.2832,
-            "center": [
-                11.6092,
-                145.2832
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-28-1.png",
-            "dbz": 36.2,
-            "pressure": 1011.6,
-            "wind_speed": 18.7,
-            "wind_dir": 268.0,
-            "vil": 68,
-            "echo_top": 9.4,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    11.6102,
-                    145.3112
-                ],
-                [
-                    11.6092,
-                    145.2832
-                ]
-            ],
-            "forecast_path": [
-                [
-                    11.6053,
-                    145.1711
-                ],
-                [
-                    11.5994,
-                    145.0029
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-28-2",
-            "lat": 11.7383,
-            "lon": 144.1846,
-            "center": [
-                11.7383,
-                144.1846
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-28-2.png",
-            "dbz": 34.6,
-            "pressure": 1011.6,
-            "wind_speed": 18.4,
-            "wind_dir": 262.0,
-            "vil": 41,
-            "echo_top": 8.8,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    11.7421,
-                    144.2119
-                ],
-                [
-                    11.7383,
-                    144.1846
-                ]
-            ],
-            "forecast_path": [
-                [
-                    11.7229,
-                    144.0753
-                ],
-                [
-                    11.6999,
-                    143.9113
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-28-3",
-            "lat": 12.1253,
-            "lon": 144.0088,
-            "center": [
-                12.1253,
-                144.0088
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-28-3.png",
-            "dbz": 33.7,
-            "pressure": 1011.5,
-            "wind_speed": 18.4,
-            "wind_dir": 270.0,
-            "vil": 27,
-            "echo_top": 8.5,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    12.1253,
-                    144.0364
-                ],
-                [
-                    12.1253,
-                    144.0088
-                ]
-            ],
-            "forecast_path": [
-                [
-                    12.1253,
-                    143.8984
-                ],
-                [
-                    12.1253,
-                    143.7328
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-28-4",
-            "lat": 11.9963,
-            "lon": 145.459,
-            "center": [
-                11.9963,
-                145.459
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-28-4.png",
-            "dbz": 35.6,
-            "pressure": 1011.5,
-            "wind_speed": 21.7,
-            "wind_dir": 277.0,
-            "vil": 57,
-            "echo_top": 9.1,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    11.9923,
-                    145.4913
-                ],
-                [
-                    11.9963,
-                    145.459
-                ]
-            ],
-            "forecast_path": [
-                [
-                    12.0122,
-                    145.3298
-                ],
-                [
-                    12.036,
-                    145.1359
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-28-5",
-            "lat": 12.2541,
-            "lon": 144.3604,
-            "center": [
-                12.2541,
-                144.3604
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-28-5.png",
-            "dbz": 34.6,
-            "pressure": 1011.4,
-            "wind_speed": 20.5,
-            "wind_dir": 273.0,
-            "vil": 41,
-            "echo_top": 8.8,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    12.2525,
-                    144.3911
-                ],
-                [
-                    12.2541,
-                    144.3604
-                ]
-            ],
-            "forecast_path": [
-                [
-                    12.2605,
-                    144.2376
-                ],
-                [
-                    12.2702,
-                    144.0533
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-28-6",
-            "lat": 12.4258,
-            "lon": 144.7559,
-            "center": [
-                12.4258,
-                144.7559
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-28-6.png",
-            "dbz": 39.3,
-            "pressure": 1011.5,
-            "wind_speed": 17.9,
-            "wind_dir": 275.0,
-            "vil": 117,
-            "echo_top": 10.3,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    12.4235,
-                    144.7826
-                ],
-                [
-                    12.4258,
-                    144.7559
-                ]
-            ],
-            "forecast_path": [
-                [
-                    12.4352,
-                    144.6489
-                ],
-                [
-                    12.4492,
-                    144.4884
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-28-7",
-            "lat": 13.8381,
-            "lon": 142.8223,
-            "center": [
-                13.8381,
-                142.8223
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-28-7.png",
-            "dbz": 35.9,
-            "pressure": 1013.2,
-            "wind_speed": 35.0,
-            "wind_dir": 225.0,
-            "vil": 62,
-            "echo_top": 9.2,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    13.8752,
-                    142.8594
-                ],
-                [
-                    13.8381,
-                    142.8223
-                ]
-            ],
-            "forecast_path": [
-                [
-                    13.6896,
-                    142.6738
-                ],
-                [
-                    13.4669,
-                    142.4511
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-28-8",
-            "lat": 14.1792,
-            "lon": 144.2285,
-            "center": [
-                14.1792,
-                144.2285
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-28-8.png",
-            "dbz": 36.2,
-            "pressure": 1013.2,
-            "wind_speed": 35.0,
-            "wind_dir": 225.0,
-            "vil": 68,
-            "echo_top": 9.4,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    14.2163,
-                    144.2656
-                ],
-                [
-                    14.1792,
-                    144.2285
-                ]
-            ],
-            "forecast_path": [
-                [
-                    14.0307,
-                    144.08
-                ],
-                [
-                    13.808,
-                    143.8573
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-28-9",
-            "lat": 14.4772,
-            "lon": 143.3496,
-            "center": [
-                14.4772,
-                143.3496
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-28-9.png",
-            "dbz": 33.5,
-            "pressure": 1011.3,
-            "wind_speed": 7.8,
-            "wind_dir": 302.0,
-            "vil": 24,
-            "echo_top": 8.5,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    14.471,
-                    143.3595
-                ],
-                [
-                    14.4772,
-                    143.3496
-                ]
-            ],
-            "forecast_path": [
-                [
-                    14.502,
-                    143.3099
-                ],
-                [
-                    14.5392,
-                    143.2504
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-1",
-            "lat": 11.3508,
-            "lon": 107.666,
-            "center": [
-                11.3508,
-                107.666
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-1.png",
-            "dbz": 51.9,
-            "pressure": 1013.2,
-            "wind_speed": 35.0,
-            "wind_dir": 225.0,
-            "vil": 318,
-            "echo_top": 14.4,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    11.3879,
-                    107.7031
-                ],
-                [
-                    11.3508,
-                    107.666
-                ]
-            ],
-            "forecast_path": [
-                [
-                    11.2023,
-                    107.5175
-                ],
-                [
-                    10.9796,
-                    107.2948
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-2",
-            "lat": 11.5661,
-            "lon": 106.1719,
-            "center": [
-                11.5661,
-                106.1719
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-2.png",
-            "dbz": 34.9,
-            "pressure": 1014.9,
-            "wind_speed": 3.8,
-            "wind_dir": 3.0,
-            "vil": 47,
-            "echo_top": 8.9,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    11.5604,
-                    106.1716
-                ],
-                [
-                    11.5661,
-                    106.1719
-                ]
-            ],
-            "forecast_path": [
-                [
-                    11.5889,
-                    106.1731
-                ],
-                [
-                    11.623,
-                    106.1749
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-3",
-            "lat": 11.7383,
-            "lon": 108.8086,
-            "center": [
-                11.7383,
-                108.8086
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-3.png",
-            "dbz": 36.9,
-            "pressure": 1014.8,
-            "wind_speed": 2.0,
-            "wind_dir": 27.0,
-            "vil": 78,
-            "echo_top": 9.6,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    11.7356,
-                    108.8072
-                ],
-                [
-                    11.7383,
-                    108.8086
-                ]
-            ],
-            "forecast_path": [
-                [
-                    11.749,
-                    108.814
-                ],
-                [
-                    11.765,
-                    108.8222
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-4",
-            "lat": 12.8118,
-            "lon": 102.041,
-            "center": [
-                12.8118,
-                102.041
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-4.png",
-            "dbz": 49.2,
-            "pressure": 1015.5,
-            "wind_speed": 0.6,
-            "wind_dir": 34.0,
-            "vil": 275,
-            "echo_top": 13.5,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    12.8111,
-                    102.0405
-                ],
-                [
-                    12.8118,
-                    102.041
-                ]
-            ],
-            "forecast_path": [
-                [
-                    12.8148,
-                    102.043
-                ],
-                [
-                    12.8193,
-                    102.046
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-5",
-            "lat": 13.7527,
-            "lon": 101.3818,
-            "center": [
-                13.7527,
-                101.3818
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-5.png",
-            "dbz": 42.2,
-            "pressure": 1015.4,
-            "wind_speed": 4.0,
-            "wind_dir": 108.0,
-            "vil": 163,
-            "echo_top": 11.3,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    13.7546,
-                    101.3761
-                ],
-                [
-                    13.7527,
-                    101.3818
-                ]
-            ],
-            "forecast_path": [
-                [
-                    13.7453,
-                    101.4046
-                ],
-                [
-                    13.7342,
-                    101.4389
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-6",
-            "lat": 14.7749,
-            "lon": 108.3691,
-            "center": [
-                14.7749,
-                108.3691
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-6.png",
-            "dbz": 33.5,
-            "pressure": 1017.2,
-            "wind_speed": 2.3,
-            "wind_dir": 342.0,
-            "vil": 24,
-            "echo_top": 8.5,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    14.7716,
-                    108.3702
-                ],
-                [
-                    14.7749,
-                    108.3691
-                ]
-            ],
-            "forecast_path": [
-                [
-                    14.788,
-                    108.3648
-                ],
-                [
-                    14.8077,
-                    108.3584
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-7",
-            "lat": 15.1146,
-            "lon": 101.4258,
-            "center": [
-                15.1146,
-                101.4258
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-7.png",
-            "dbz": 37.8,
-            "pressure": 1016.6,
-            "wind_speed": 5.2,
-            "wind_dir": 92.0,
-            "vil": 93,
-            "echo_top": 9.9,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    15.1149,
-                    101.418
-                ],
-                [
-                    15.1146,
-                    101.4258
-                ]
-            ],
-            "forecast_path": [
-                [
-                    15.1135,
-                    101.457
-                ],
-                [
-                    15.1119,
-                    101.5038
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-8",
-            "lat": 15.4537,
-            "lon": 108.6768,
-            "center": [
-                15.4537,
-                108.6768
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-8.png",
-            "dbz": 43.8,
-            "pressure": 1016.2,
-            "wind_speed": 14.8,
-            "wind_dir": 333.0,
-            "vil": 189,
-            "echo_top": 11.8,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    15.4339,
-                    108.6869
-                ],
-                [
-                    15.4537,
-                    108.6768
-                ]
-            ],
-            "forecast_path": [
-                [
-                    15.5328,
-                    108.6365
-                ],
-                [
-                    15.6515,
-                    108.576
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-9",
-            "lat": 15.5384,
-            "lon": 107.4023,
-            "center": [
-                15.5384,
-                107.4023
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-9.png",
-            "dbz": 38.9,
-            "pressure": 1019.4,
-            "wind_speed": 9.9,
-            "wind_dir": 25.0,
-            "vil": 111,
-            "echo_top": 10.2,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    15.5249,
-                    107.396
-                ],
-                [
-                    15.5384,
-                    107.4023
-                ]
-            ],
-            "forecast_path": [
-                [
-                    15.5922,
-                    107.4274
-                ],
-                [
-                    15.673,
-                    107.4651
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-10",
-            "lat": 16.1725,
-            "lon": 102.4805,
-            "center": [
-                16.1725,
-                102.4805
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-10.png",
-            "dbz": 52.1,
-            "pressure": 1016.5,
-            "wind_speed": 7.9,
-            "wind_dir": 12.0,
-            "vil": 322,
-            "echo_top": 14.4,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    16.1609,
-                    102.478
-                ],
-                [
-                    16.1725,
-                    102.4805
-                ]
-            ],
-            "forecast_path": [
-                [
-                    16.2189,
-                    102.4904
-                ],
-                [
-                    16.2884,
-                    102.5051
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-11",
-            "lat": 16.5098,
-            "lon": 108.4131,
-            "center": [
-                16.5098,
-                108.4131
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-11.png",
-            "dbz": 34.1,
-            "pressure": 1016.4,
-            "wind_speed": 20.1,
-            "wind_dir": 29.0,
-            "vil": 34,
-            "echo_top": 8.7,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    16.4834,
-                    108.3985
-                ],
-                [
-                    16.5098,
-                    108.4131
-                ]
-            ],
-            "forecast_path": [
-                [
-                    16.6153,
-                    108.4716
-                ],
-                [
-                    16.7735,
-                    108.5593
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-12",
-            "lat": 17.3926,
-            "lon": 109.9512,
-            "center": [
-                17.3926,
-                109.9512
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-12.png",
-            "dbz": 62.4,
-            "pressure": 1015.4,
-            "wind_speed": 37.5,
-            "wind_dir": 51.0,
-            "vil": 487,
-            "echo_top": 17.7,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    17.3572,
-                    109.9075
-                ],
-                [
-                    17.3926,
-                    109.9512
-                ]
-            ],
-            "forecast_path": [
-                [
-                    17.5342,
-                    110.1261
-                ],
-                [
-                    17.7466,
-                    110.3883
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-13",
-            "lat": 17.7278,
-            "lon": 111.0498,
-            "center": [
-                17.7278,
-                111.0498
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-13.png",
-            "dbz": 34.4,
-            "pressure": 1014.9,
-            "wind_speed": 42.1,
-            "wind_dir": 51.0,
-            "vil": 38,
-            "echo_top": 8.8,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    17.6881,
-                    111.0007
-                ],
-                [
-                    17.7278,
-                    111.0498
-                ]
-            ],
-            "forecast_path": [
-                [
-                    17.8868,
-                    111.2461
-                ],
-                [
-                    18.1252,
-                    111.5406
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-14",
-            "lat": 17.8951,
-            "lon": 109.248,
-            "center": [
-                17.8951,
-                109.248
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-14.png",
-            "dbz": 33.3,
-            "pressure": 1016.1,
-            "wind_speed": 20.6,
-            "wind_dir": 35.0,
-            "vil": 21,
-            "echo_top": 8.4,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    17.8698,
-                    109.2303
-                ],
-                [
-                    17.8951,
-                    109.248
-                ]
-            ],
-            "forecast_path": [
-                [
-                    17.9963,
-                    109.3189
-                ],
-                [
-                    18.1482,
-                    109.4252
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-15",
-            "lat": 18.4796,
-            "lon": 105.5566,
-            "center": [
-                18.4796,
-                105.5566
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-15.png",
-            "dbz": 35.4,
-            "pressure": 1013.2,
-            "wind_speed": 35.0,
-            "wind_dir": 225.0,
-            "vil": 55,
-            "echo_top": 9.1,
-            "reliability": "99.9%",
-            "eta": "+4h Predittivo",
-            "history_path": [
-                [
-                    18.5167,
-                    105.5937
-                ],
-                [
-                    18.4796,
-                    105.5566
-                ]
-            ],
-            "forecast_path": [
-                [
-                    18.3311,
-                    105.4081
-                ],
-                [
-                    18.1084,
-                    105.1854
-                ]
-            ]
-        },
-        {
-            "id": "Core-Z5-25-16",
-            "lat": 20.8793,
-            "lon": 106.5234,
-            "center": [
-                20.8793,
-                106.5234
-            ],
-            "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-16.png",
-            "dbz": 35.9,
-            "pressure": 1018.3,
-            "wind_speed": 4.9,
-            "wind_dir": 86.0,
+            "wind_speed": 44.5,
+            "wind_dir": 65.0,
             "vil": 63,
             "echo_top": 9.3,
             "reliability": "99.9%",
             "eta": "+4h Predittivo",
             "history_path": [
                 [
-                    20.8788,
-                    106.5161
+                    19.7799,
+                    114.7686
                 ],
                 [
-                    20.8793,
-                    106.5234
+                    19.8081,
+                    114.8291
                 ]
             ],
             "forecast_path": [
                 [
-                    20.8814,
-                    106.5527
+                    19.9209,
+                    115.0711
                 ],
                 [
-                    20.8844,
-                    106.5967
+                    20.0902,
+                    115.4341
                 ]
             ]
         },
         {
-            "id": "Core-Z5-25-17",
-            "lat": 21.0845,
-            "lon": 105.9082,
+            "id": "Core-Z5-26-3",
+            "lat": 21.7799,
+            "lon": 121.2451,
             "center": [
-                21.0845,
-                105.9082
+                21.7799,
+                121.2451
             ],
             "classification": "Cella Convettiva Intensità >= 32 dBZ",
-            "profile_image": "profili/Core-Z5-25-17.png",
+            "profile_image": "profili/Core-Z5-26-3.png",
+            "dbz": 33.4,
+            "pressure": 1018.1,
+            "wind_speed": 37.1,
+            "wind_dir": 48.0,
+            "vil": 23,
+            "echo_top": 8.5,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    21.7427,
+                    121.2037
+                ],
+                [
+                    21.7799,
+                    121.2451
+                ]
+            ],
+            "forecast_path": [
+                [
+                    21.9288,
+                    121.4105
+                ],
+                [
+                    22.1523,
+                    121.6587
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-24-1",
+            "lat": 6.7083,
+            "lon": 99.9756,
+            "center": [
+                6.7083,
+                99.9756
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-24-1.png",
+            "dbz": 33.4,
+            "pressure": 1016.0,
+            "wind_speed": 7.2,
+            "wind_dir": 103.0,
+            "vil": 22,
+            "echo_top": 8.4,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    6.7107,
+                    99.9651
+                ],
+                [
+                    6.7083,
+                    99.9756
+                ]
+            ],
+            "forecast_path": [
+                [
+                    6.6986,
+                    100.0177
+                ],
+                [
+                    6.684,
+                    100.0808
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-24-2",
+            "lat": 7.1445,
+            "lon": 99.5361,
+            "center": [
+                7.1445,
+                99.5361
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-24-2.png",
+            "dbz": 33.6,
+            "pressure": 1016.0,
+            "wind_speed": 6.8,
+            "wind_dir": 323.0,
+            "vil": 25,
+            "echo_top": 8.5,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    7.1364,
+                    99.5422
+                ],
+                [
+                    7.1445,
+                    99.5361
+                ]
+            ],
+            "forecast_path": [
+                [
+                    7.1771,
+                    99.5115
+                ],
+                [
+                    7.226,
+                    99.4747
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-24-3",
+            "lat": 8.7548,
+            "lon": 100.1514,
+            "center": [
+                8.7548,
+                100.1514
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-24-3.png",
+            "dbz": 34.0,
+            "pressure": 1016.1,
+            "wind_speed": 13.0,
+            "wind_dir": 333.0,
+            "vil": 32,
+            "echo_top": 8.6,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    8.7374,
+                    100.1603
+                ],
+                [
+                    8.7548,
+                    100.1514
+                ]
+            ],
+            "forecast_path": [
+                [
+                    8.8243,
+                    100.116
+                ],
+                [
+                    8.9285,
+                    100.0629
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-24-4",
+            "lat": 9.1021,
+            "lon": 100.1514,
+            "center": [
+                9.1021,
+                100.1514
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-24-4.png",
+            "dbz": 34.2,
+            "pressure": 1016.1,
+            "wind_speed": 13.8,
+            "wind_dir": 309.0,
+            "vil": 36,
+            "echo_top": 8.7,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    9.0891,
+                    100.1675
+                ],
+                [
+                    9.1021,
+                    100.1514
+                ]
+            ],
+            "forecast_path": [
+                [
+                    9.1542,
+                    100.0871
+                ],
+                [
+                    9.2324,
+                    99.9905
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-24-5",
+            "lat": 9.3624,
+            "lon": 99.7119,
+            "center": [
+                9.3624,
+                99.7119
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-24-5.png",
+            "dbz": 33.8,
+            "pressure": 1016.3,
+            "wind_speed": 5.4,
+            "wind_dir": 334.0,
+            "vil": 28,
+            "echo_top": 8.6,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    9.3551,
+                    99.7155
+                ],
+                [
+                    9.3624,
+                    99.7119
+                ]
+            ],
+            "forecast_path": [
+                [
+                    9.3915,
+                    99.6977
+                ],
+                [
+                    9.4352,
+                    99.6764
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-24-6",
+            "lat": 9.7957,
+            "lon": 99.8438,
+            "center": [
+                9.7957,
+                99.8438
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-24-6.png",
+            "dbz": 33.6,
+            "pressure": 1016.3,
+            "wind_speed": 7.1,
+            "wind_dir": 341.0,
+            "vil": 25,
+            "echo_top": 8.5,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    9.7856,
+                    99.8473
+                ],
+                [
+                    9.7957,
+                    99.8438
+                ]
+            ],
+            "forecast_path": [
+                [
+                    9.836,
+                    99.8299
+                ],
+                [
+                    9.8964,
+                    99.8091
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-1",
+            "lat": 3.2063,
+            "lon": 116.8066,
+            "center": [
+                3.2063,
+                116.8066
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-1.png",
+            "dbz": 34.8,
+            "pressure": 1014.4,
+            "wind_speed": 1.7,
+            "wind_dir": 198.0,
+            "vil": 45,
+            "echo_top": 8.9,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    3.2087,
+                    116.8074
+                ],
+                [
+                    3.2063,
+                    116.8066
+                ]
+            ],
+            "forecast_path": [
+                [
+                    3.1966,
+                    116.8034
+                ],
+                [
+                    3.182,
+                    116.7987
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-2",
+            "lat": 4.0396,
+            "lon": 117.334,
+            "center": [
+                4.0396,
+                117.334
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-2.png",
+            "dbz": 35.4,
+            "pressure": 1013.7,
+            "wind_speed": 4.4,
+            "wind_dir": 32.0,
+            "vil": 55,
+            "echo_top": 9.1,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    4.034,
+                    117.3305
+                ],
+                [
+                    4.0396,
+                    117.334
+                ]
+            ],
+            "forecast_path": [
+                [
+                    4.062,
+                    117.348
+                ],
+                [
+                    4.0956,
+                    117.369
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-3",
+            "lat": 4.3464,
+            "lon": 116.7188,
+            "center": [
+                4.3464,
+                116.7188
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-3.png",
+            "dbz": 48.1,
+            "pressure": 1015.5,
+            "wind_speed": 5.9,
+            "wind_dir": 337.0,
+            "vil": 258,
+            "echo_top": 13.2,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    4.3383,
+                    116.7223
+                ],
+                [
+                    4.3464,
+                    116.7188
+                ]
+            ],
+            "forecast_path": [
+                [
+                    4.379,
+                    116.705
+                ],
+                [
+                    4.4279,
+                    116.6842
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-27-1",
+            "lat": -18.9375,
+            "lon": 128.3643,
+            "center": [
+                -18.9375,
+                128.3643
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-27-1.png",
+            "dbz": 38.8,
+            "pressure": 1013.9,
+            "wind_speed": 11.2,
+            "wind_dir": 298.0,
+            "vil": 108,
+            "echo_top": 10.2,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    -18.9454,
+                    128.3791
+                ],
+                [
+                    -18.9375,
+                    128.3643
+                ]
+            ],
+            "forecast_path": [
+                [
+                    -18.906,
+                    128.305
+                ],
+                [
+                    -18.8586,
+                    128.216
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-27-2",
+            "lat": -18.0205,
+            "lon": 128.0127,
+            "center": [
+                -18.0205,
+                128.0127
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-27-2.png",
+            "dbz": 34.1,
+            "pressure": 1013.9,
+            "wind_speed": 4.1,
+            "wind_dir": 360.0,
+            "vil": 33,
+            "echo_top": 8.7,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    -18.0266,
+                    128.0127
+                ],
+                [
+                    -18.0205,
+                    128.0127
+                ]
+            ],
+            "forecast_path": [
+                [
+                    -17.9959,
+                    128.0127
+                ],
+                [
+                    -17.959,
+                    128.0127
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-24-1",
+            "lat": 12.2112,
+            "lon": 99.7559,
+            "center": [
+                12.2112,
+                99.7559
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-24-1.png",
+            "dbz": 34.2,
+            "pressure": 1016.5,
+            "wind_speed": 4.5,
+            "wind_dir": 326.0,
+            "vil": 35,
+            "echo_top": 8.7,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    12.2056,
+                    99.7597
+                ],
+                [
+                    12.2112,
+                    99.7559
+                ]
+            ],
+            "forecast_path": [
+                [
+                    12.2336,
+                    99.7408
+                ],
+                [
+                    12.2672,
+                    99.7182
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-24-2",
+            "lat": 12.5546,
+            "lon": 100.0195,
+            "center": [
+                12.5546,
+                100.0195
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-24-2.png",
+            "dbz": 37.8,
+            "pressure": 1015.9,
+            "wind_speed": 8.3,
+            "wind_dir": 314.0,
+            "vil": 92,
+            "echo_top": 9.8,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    12.546,
+                    100.0285
+                ],
+                [
+                    12.5546,
+                    100.0195
+                ]
+            ],
+            "forecast_path": [
+                [
+                    12.5892,
+                    99.9837
+                ],
+                [
+                    12.6411,
+                    99.9299
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-24-3",
+            "lat": 13.0688,
+            "lon": 99.7559,
+            "center": [
+                13.0688,
+                99.7559
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-24-3.png",
+            "dbz": 36.9,
+            "pressure": 1016.7,
+            "wind_speed": 8.4,
+            "wind_dir": 281.0,
+            "vil": 79,
+            "echo_top": 9.6,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    13.0664,
+                    99.7683
+                ],
+                [
+                    13.0688,
+                    99.7559
+                ]
+            ],
+            "forecast_path": [
+                [
+                    13.0784,
+                    99.7064
+                ],
+                [
+                    13.0928,
+                    99.6322
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-24-4",
+            "lat": 13.8381,
+            "lon": 100.7666,
+            "center": [
+                13.8381,
+                100.7666
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-24-4.png",
+            "dbz": 59.3,
+            "pressure": 1015.5,
+            "wind_speed": 6.5,
+            "wind_dir": 203.0,
+            "vil": 437,
+            "echo_top": 16.7,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    13.8471,
+                    100.7704
+                ],
+                [
+                    13.8381,
+                    100.7666
+                ]
+            ],
+            "forecast_path": [
+                [
+                    13.8022,
+                    100.7514
+                ],
+                [
+                    13.7484,
+                    100.7285
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-24-5",
+            "lat": 15.5807,
+            "lon": 100.8984,
+            "center": [
+                15.5807,
+                100.8984
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-24-5.png",
             "dbz": 34.6,
-            "pressure": 1013.2,
-            "wind_speed": 35.0,
-            "wind_dir": 225.0,
+            "pressure": 1016.2,
+            "wind_speed": 6.6,
+            "wind_dir": 11.0,
             "vil": 41,
             "echo_top": 8.8,
             "reliability": "99.9%",
             "eta": "+4h Predittivo",
             "history_path": [
                 [
-                    21.1216,
-                    105.9453
+                    15.571,
+                    100.8965
                 ],
                 [
-                    21.0845,
-                    105.9082
+                    15.5807,
+                    100.8984
                 ]
             ],
             "forecast_path": [
                 [
-                    20.936,
-                    105.7597
+                    15.6196,
+                    100.906
                 ],
                 [
-                    20.7133,
-                    105.537
+                    15.6779,
+                    100.9173
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-24-6",
+            "lat": 15.5384,
+            "lon": 99.0527,
+            "center": [
+                15.5384,
+                99.0527
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-24-6.png",
+            "dbz": 43.2,
+            "pressure": 1019.5,
+            "wind_speed": 1.9,
+            "wind_dir": 56.0,
+            "vil": 180,
+            "echo_top": 11.6,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    15.5368,
+                    99.0503
+                ],
+                [
+                    15.5384,
+                    99.0527
+                ]
+            ],
+            "forecast_path": [
+                [
+                    15.5448,
+                    99.0622
+                ],
+                [
+                    15.5543,
+                    99.0763
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-24-7",
+            "lat": 18.2294,
+            "lon": 99.3164,
+            "center": [
+                18.2294,
+                99.3164
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-24-7.png",
+            "dbz": 67.0,
+            "pressure": 1017.0,
+            "wind_speed": 3.7,
+            "wind_dir": 241.0,
+            "vil": 3404,
+            "echo_top": 76.1,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    18.2321,
+                    99.3213
+                ],
+                [
+                    18.2294,
+                    99.3164
+                ]
+            ],
+            "forecast_path": [
+                [
+                    18.2186,
+                    99.297
+                ],
+                [
+                    18.2025,
+                    99.2679
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-1",
+            "lat": -35.9958,
+            "lon": 117.8613,
+            "center": [
+                -35.9958,
+                117.8613
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-1.png",
+            "dbz": 57.1,
+            "pressure": 1009.0,
+            "wind_speed": 22.5,
+            "wind_dir": 204.0,
+            "vil": 402,
+            "echo_top": 16.0,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    -35.965,
+                    117.875
+                ],
+                [
+                    -35.9958,
+                    117.8613
+                ]
+            ],
+            "forecast_path": [
+                [
+                    -36.1191,
+                    117.8064
+                ],
+                [
+                    -36.3041,
+                    117.724
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-2",
+            "lat": -34.1982,
+            "lon": 116.1914,
+            "center": [
+                -34.1982,
+                116.1914
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-2.png",
+            "dbz": 34.2,
+            "pressure": 1011.7,
+            "wind_speed": 16.4,
+            "wind_dir": 299.0,
+            "vil": 36,
+            "echo_top": 8.7,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    -34.2101,
+                    116.2129
+                ],
+                [
+                    -34.1982,
+                    116.1914
+                ]
+            ],
+            "forecast_path": [
+                [
+                    -34.1505,
+                    116.1053
+                ],
+                [
+                    -34.0789,
+                    115.9762
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-3",
+            "lat": -34.597,
+            "lon": 116.1035,
+            "center": [
+                -34.597,
+                116.1035
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-3.png",
+            "dbz": 39.8,
+            "pressure": 1011.1,
+            "wind_speed": 14.2,
+            "wind_dir": 290.0,
+            "vil": 124,
+            "echo_top": 10.5,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    -34.6043,
+                    116.1235
+                ],
+                [
+                    -34.597,
+                    116.1035
+                ]
+            ],
+            "forecast_path": [
+                [
+                    -34.5679,
+                    116.0234
+                ],
+                [
+                    -34.5241,
+                    115.9033
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-4",
+            "lat": -32.9902,
+            "lon": 114.0381,
+            "center": [
+                -32.9902,
+                114.0381
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-4.png",
+            "dbz": 35.2,
+            "pressure": 1013.3,
+            "wind_speed": 40.8,
+            "wind_dir": 265.0,
+            "vil": 51,
+            "echo_top": 9.0,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    -32.9849,
+                    114.0991
+                ],
+                [
+                    -32.9902,
+                    114.0381
+                ]
+            ],
+            "forecast_path": [
+                [
+                    -33.0115,
+                    113.7942
+                ],
+                [
+                    -33.0435,
+                    113.4284
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-28-1",
+            "lat": 33.7243,
+            "lon": 137.8125,
+            "center": [
+                33.7243,
+                137.8125
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-28-1.png",
+            "dbz": 33.3,
+            "pressure": 1019.0,
+            "wind_speed": 32.9,
+            "wind_dir": 70.0,
+            "vil": 21,
+            "echo_top": 8.4,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    33.7074,
+                    137.7661
+                ],
+                [
+                    33.7243,
+                    137.8125
+                ]
+            ],
+            "forecast_path": [
+                [
+                    33.7918,
+                    137.998
+                ],
+                [
+                    33.8931,
+                    138.2762
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-28-1",
+            "lat": -30.6001,
+            "lon": 136.626,
+            "center": [
+                -30.6001,
+                136.626
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-28-1.png",
+            "dbz": 34.9,
+            "pressure": 1018.0,
+            "wind_speed": 11.3,
+            "wind_dir": 22.0,
+            "vil": 47,
+            "echo_top": 8.9,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    -30.6158,
+                    136.6197
+                ],
+                [
+                    -30.6001,
+                    136.626
+                ]
+            ],
+            "forecast_path": [
+                [
+                    -30.5372,
+                    136.6514
+                ],
+                [
+                    -30.4429,
+                    136.6895
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-28-1",
+            "lat": -20.5505,
+            "lon": 145.415,
+            "center": [
+                -20.5505,
+                145.415
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-28-1.png",
+            "dbz": 44.9,
+            "pressure": 1016.2,
+            "wind_speed": 11.3,
+            "wind_dir": 43.0,
+            "vil": 206,
+            "echo_top": 12.1,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    -20.5629,
+                    145.4034
+                ],
+                [
+                    -20.5505,
+                    145.415
+                ]
+            ],
+            "forecast_path": [
+                [
+                    -20.5009,
+                    145.4612
+                ],
+                [
+                    -20.4265,
+                    145.5306
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-1",
+            "lat": -19.3526,
+            "lon": 120.498,
+            "center": [
+                -19.3526,
+                120.498
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-1.png",
+            "dbz": 38.4,
+            "pressure": 1012.9,
+            "wind_speed": 21.5,
+            "wind_dir": 261.0,
+            "vil": 103,
+            "echo_top": 10.1,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    -19.3476,
+                    120.5299
+                ],
+                [
+                    -19.3526,
+                    120.498
+                ]
+            ],
+            "forecast_path": [
+                [
+                    -19.3728,
+                    120.3706
+                ],
+                [
+                    -19.4031,
+                    120.1795
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-2",
+            "lat": -19.3941,
+            "lon": 117.2021,
+            "center": [
+                -19.3941,
+                117.2021
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-2.png",
+            "dbz": 42.1,
+            "pressure": 1014.9,
+            "wind_speed": 27.1,
+            "wind_dir": 245.0,
+            "vil": 162,
+            "echo_top": 11.2,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    -19.3769,
+                    117.2389
+                ],
+                [
+                    -19.3941,
+                    117.2021
+                ]
+            ],
+            "forecast_path": [
+                [
+                    -19.4628,
+                    117.0547
+                ],
+                [
+                    -19.5659,
+                    116.8337
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-3",
+            "lat": -19.1036,
+            "lon": 118.1689,
+            "center": [
+                -19.1036,
+                118.1689
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-3.png",
+            "dbz": 55.7,
+            "pressure": 1013.9,
+            "wind_speed": 22.7,
+            "wind_dir": 249.0,
+            "vil": 379,
+            "echo_top": 15.6,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    -19.0914,
+                    118.2007
+                ],
+                [
+                    -19.1036,
+                    118.1689
+                ]
+            ],
+            "forecast_path": [
+                [
+                    -19.1524,
+                    118.0417
+                ],
+                [
+                    -19.2256,
+                    117.851
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-4",
+            "lat": -18.8127,
+            "lon": 120.1904,
+            "center": [
+                -18.8127,
+                120.1904
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-4.png",
+            "dbz": 40.4,
+            "pressure": 1013.4,
+            "wind_speed": 14.7,
+            "wind_dir": 243.0,
+            "vil": 135,
+            "echo_top": 10.7,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    -18.8027,
+                    120.21
+                ],
+                [
+                    -18.8127,
+                    120.1904
+                ]
+            ],
+            "forecast_path": [
+                [
+                    -18.8527,
+                    120.1118
+                ],
+                [
+                    -18.9128,
+                    119.9939
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-5",
+            "lat": -17.7278,
+            "lon": 121.377,
+            "center": [
+                -17.7278,
+                121.377
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-5.png",
+            "dbz": 35.2,
+            "pressure": 1013.2,
+            "wind_speed": 23.5,
+            "wind_dir": 295.0,
+            "vil": 51,
+            "echo_top": 9.0,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    -17.7427,
+                    121.4089
+                ],
+                [
+                    -17.7278,
+                    121.377
+                ]
+            ],
+            "forecast_path": [
+                [
+                    -17.6682,
+                    121.2492
+                ],
+                [
+                    -17.5788,
+                    121.0575
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-6",
+            "lat": -17.7696,
+            "lon": 120.498,
+            "center": [
+                -17.7696,
+                120.498
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-6.png",
+            "dbz": 40.8,
+            "pressure": 1013.7,
+            "wind_speed": 20.8,
+            "wind_dir": 288.0,
+            "vil": 141,
+            "echo_top": 10.8,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    -17.7792,
+                    120.5277
+                ],
+                [
+                    -17.7696,
+                    120.498
+                ]
+            ],
+            "forecast_path": [
+                [
+                    -17.731,
+                    120.3793
+                ],
+                [
+                    -17.6732,
+                    120.2013
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-1",
+            "lat": 22.2688,
+            "lon": 121.1133,
+            "center": [
+                22.2688,
+                121.1133
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-1.png",
+            "dbz": 34.1,
+            "pressure": 1018.6,
+            "wind_speed": 46.9,
+            "wind_dir": 27.0,
+            "vil": 34,
+            "echo_top": 8.7,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    22.2061,
+                    121.0814
+                ],
+                [
+                    22.2688,
+                    121.1133
+                ]
+            ],
+            "forecast_path": [
+                [
+                    22.5195,
+                    121.2411
+                ],
+                [
+                    22.8956,
+                    121.4327
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-2",
+            "lat": 23.2817,
+            "lon": 121.4209,
+            "center": [
+                23.2817,
+                121.4209
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-2.png",
+            "dbz": 33.3,
+            "pressure": 1021.0,
+            "wind_speed": 5.9,
+            "wind_dir": 288.0,
+            "vil": 21,
+            "echo_top": 8.4,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    23.279,
+                    121.4293
+                ],
+                [
+                    23.2817,
+                    121.4209
+                ]
+            ],
+            "forecast_path": [
+                [
+                    23.2926,
+                    121.3872
+                ],
+                [
+                    23.309,
+                    121.3367
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-3",
+            "lat": 26.9808,
+            "lon": 113.291,
+            "center": [
+                26.9808,
+                113.291
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-3.png",
+            "dbz": 35.4,
+            "pressure": 1021.3,
+            "wind_speed": 1.7,
+            "wind_dir": 347.0,
+            "vil": 55,
+            "echo_top": 9.1,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    26.9783,
+                    113.2916
+                ],
+                [
+                    26.9808,
+                    113.291
+                ]
+            ],
+            "forecast_path": [
+                [
+                    26.9907,
+                    113.2887
+                ],
+                [
+                    27.0056,
+                    113.2853
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-4",
+            "lat": 31.5036,
+            "lon": 115.0049,
+            "center": [
+                31.5036,
+                115.0049
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-4.png",
+            "dbz": 34.9,
+            "pressure": 1022.7,
+            "wind_speed": 2.5,
+            "wind_dir": 98.0,
+            "vil": 46,
+            "echo_top": 8.9,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    31.5041,
+                    115.0012
+                ],
+                [
+                    31.5036,
+                    115.0049
+                ]
+            ],
+            "forecast_path": [
+                [
+                    31.5015,
+                    115.0198
+                ],
+                [
+                    31.4984,
+                    115.042
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-5",
+            "lat": 31.4287,
+            "lon": 116.1914,
+            "center": [
+                31.4287,
+                116.1914
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-5.png",
+            "dbz": 67.0,
+            "pressure": 1023.3,
+            "wind_speed": 4.9,
+            "wind_dir": 204.0,
+            "vil": 596,
+            "echo_top": 19.9,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    31.4354,
+                    116.1944
+                ],
+                [
+                    31.4287,
+                    116.1914
+                ]
+            ],
+            "forecast_path": [
+                [
+                    31.4018,
+                    116.1794
+                ],
+                [
+                    31.3616,
+                    116.1615
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-6",
+            "lat": 31.5411,
+            "lon": 114.3457,
+            "center": [
+                31.5411,
+                114.3457
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-6.png",
+            "dbz": 45.8,
+            "pressure": 1022.5,
+            "wind_speed": 2.2,
+            "wind_dir": 355.0,
+            "vil": 220,
+            "echo_top": 12.4,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    31.5378,
+                    114.346
+                ],
+                [
+                    31.5411,
+                    114.3457
+                ]
+            ],
+            "forecast_path": [
+                [
+                    31.5542,
+                    114.3445
+                ],
+                [
+                    31.574,
+                    114.3428
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-26-7",
+            "lat": 31.9149,
+            "lon": 114.6973,
+            "center": [
+                31.9149,
+                114.6973
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-26-7.png",
+            "dbz": 33.9,
+            "pressure": 1022.4,
+            "wind_speed": 4.4,
+            "wind_dir": 148.0,
+            "vil": 31,
+            "echo_top": 8.6,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    31.9205,
+                    114.6938
+                ],
+                [
+                    31.9149,
+                    114.6973
+                ]
+            ],
+            "forecast_path": [
+                [
+                    31.8925,
+                    114.7113
+                ],
+                [
+                    31.8589,
+                    114.7323
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-1",
+            "lat": 5.8783,
+            "lon": 101.9971,
+            "center": [
+                5.8783,
+                101.9971
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-1.png",
+            "dbz": 34.6,
+            "pressure": 1016.1,
+            "wind_speed": 3.5,
+            "wind_dir": 201.0,
+            "vil": 42,
+            "echo_top": 8.8,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    5.8832,
+                    101.999
+                ],
+                [
+                    5.8783,
+                    101.9971
+                ]
+            ],
+            "forecast_path": [
+                [
+                    5.8587,
+                    101.9896
+                ],
+                [
+                    5.8293,
+                    101.9783
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-2",
+            "lat": 8.7548,
+            "lon": 106.6992,
+            "center": [
+                8.7548,
+                106.6992
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-2.png",
+            "dbz": 33.9,
+            "pressure": 1015.3,
+            "wind_speed": 8.6,
+            "wind_dir": 280.0,
+            "vil": 31,
+            "echo_top": 8.6,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    8.7526,
+                    106.7119
+                ],
+                [
+                    8.7548,
+                    106.6992
+                ]
+            ],
+            "forecast_path": [
+                [
+                    8.7638,
+                    106.6484
+                ],
+                [
+                    8.7772,
+                    106.5722
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-3",
+            "lat": 9.6657,
+            "lon": 107.0068,
+            "center": [
+                9.6657,
+                107.0068
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-3.png",
+            "dbz": 33.9,
+            "pressure": 1015.4,
+            "wind_speed": 4.3,
+            "wind_dir": 298.0,
+            "vil": 30,
+            "echo_top": 8.6,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    9.6627,
+                    107.0125
+                ],
+                [
+                    9.6657,
+                    107.0068
+                ]
+            ],
+            "forecast_path": [
+                [
+                    9.6778,
+                    106.984
+                ],
+                [
+                    9.696,
+                    106.9498
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-4",
+            "lat": 10.531,
+            "lon": 105.3809,
+            "center": [
+                10.531,
+                105.3809
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-4.png",
+            "dbz": 35.6,
+            "pressure": 1015.1,
+            "wind_speed": 1.2,
+            "wind_dir": 141.0,
+            "vil": 58,
+            "echo_top": 9.2,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    10.5324,
+                    105.3798
+                ],
+                [
+                    10.531,
+                    105.3809
+                ]
+            ],
+            "forecast_path": [
+                [
+                    10.5254,
+                    105.3854
+                ],
+                [
+                    10.517,
+                    105.3922
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-5",
+            "lat": 10.2284,
+            "lon": 107.3145,
+            "center": [
+                10.2284,
+                107.3145
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-5.png",
+            "dbz": 67.0,
+            "pressure": 1015.0,
+            "wind_speed": 5.6,
+            "wind_dir": 253.0,
+            "vil": 932,
+            "echo_top": 26.6,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    10.2309,
+                    107.3225
+                ],
+                [
+                    10.2284,
+                    107.3145
+                ]
+            ],
+            "forecast_path": [
+                [
+                    10.2186,
+                    107.2824
+                ],
+                [
+                    10.2038,
+                    107.2342
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-6",
+            "lat": 10.7901,
+            "lon": 106.6992,
+            "center": [
+                10.7901,
+                106.6992
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-6.png",
+            "dbz": 33.4,
+            "pressure": 1015.0,
+            "wind_speed": 0.9,
+            "wind_dir": 180.0,
+            "vil": 23,
+            "echo_top": 8.5,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    10.7915,
+                    106.6992
+                ],
+                [
+                    10.7901,
+                    106.6992
+                ]
+            ],
+            "forecast_path": [
+                [
+                    10.7847,
+                    106.6992
+                ],
+                [
+                    10.7766,
+                    106.6992
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-7",
+            "lat": 10.6606,
+            "lon": 104.9414,
+            "center": [
+                10.6606,
+                104.9414
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-7.png",
+            "dbz": 34.8,
+            "pressure": 1015.1,
+            "wind_speed": 5.3,
+            "wind_dir": 246.0,
+            "vil": 44,
+            "echo_top": 8.9,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    10.6638,
+                    104.9487
+                ],
+                [
+                    10.6606,
+                    104.9414
+                ]
+            ],
+            "forecast_path": [
+                [
+                    10.6477,
+                    104.9123
+                ],
+                [
+                    10.6283,
+                    104.8688
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-8",
+            "lat": 11.0922,
+            "lon": 107.8857,
+            "center": [
+                11.0922,
+                107.8857
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-8.png",
+            "dbz": 55.4,
+            "pressure": 1015.9,
+            "wind_speed": 1.6,
+            "wind_dir": 6.0,
+            "vil": 374,
+            "echo_top": 15.5,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    11.0898,
+                    107.8854
+                ],
+                [
+                    11.0922,
+                    107.8857
+                ]
+            ],
+            "forecast_path": [
+                [
+                    11.1017,
+                    107.8867
+                ],
+                [
+                    11.1161,
+                    107.8882
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-28-1",
+            "lat": 11.6953,
+            "lon": 145.1953,
+            "center": [
+                11.6953,
+                145.1953
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-28-1.png",
+            "dbz": 33.6,
+            "pressure": 1011.2,
+            "wind_speed": 18.9,
+            "wind_dir": 269.0,
+            "vil": 26,
+            "echo_top": 8.5,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    11.6958,
+                    145.2236
+                ],
+                [
+                    11.6953,
+                    145.1953
+                ]
+            ],
+            "forecast_path": [
+                [
+                    11.6933,
+                    145.0819
+                ],
+                [
+                    11.6904,
+                    144.9118
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-28-2",
+            "lat": 12.2541,
+            "lon": 144.2725,
+            "center": [
+                12.2541,
+                144.2725
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-28-2.png",
+            "dbz": 35.2,
+            "pressure": 1011.2,
+            "wind_speed": 19.7,
+            "wind_dir": 276.0,
+            "vil": 51,
+            "echo_top": 9.0,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    12.251,
+                    144.3019
+                ],
+                [
+                    12.2541,
+                    144.2725
+                ]
+            ],
+            "forecast_path": [
+                [
+                    12.2665,
+                    144.1549
+                ],
+                [
+                    12.285,
+                    143.9786
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-28-3",
+            "lat": 12.4258,
+            "lon": 144.8877,
+            "center": [
+                12.4258,
+                144.8877
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-28-3.png",
+            "dbz": 43.5,
+            "pressure": 1011.2,
+            "wind_speed": 17.0,
+            "wind_dir": 275.0,
+            "vil": 184,
+            "echo_top": 11.7,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    12.4236,
+                    144.9131
+                ],
+                [
+                    12.4258,
+                    144.8877
+                ]
+            ],
+            "forecast_path": [
+                [
+                    12.4347,
+                    144.7861
+                ],
+                [
+                    12.448,
+                    144.6337
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-28-4",
+            "lat": 13.5392,
+            "lon": 142.3389,
+            "center": [
+                13.5392,
+                142.3389
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-28-4.png",
+            "dbz": 34.0,
+            "pressure": 1011.1,
+            "wind_speed": 11.7,
+            "wind_dir": 266.0,
+            "vil": 32,
+            "echo_top": 8.6,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    13.5404,
+                    142.3564
+                ],
+                [
+                    13.5392,
+                    142.3389
+                ]
+            ],
+            "forecast_path": [
+                [
+                    13.5343,
+                    142.2689
+                ],
+                [
+                    13.527,
+                    142.1638
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-28-5",
+            "lat": 13.7527,
+            "lon": 142.9102,
+            "center": [
+                13.7527,
+                142.9102
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-28-5.png",
+            "dbz": 36.4,
+            "pressure": 1011.0,
+            "wind_speed": 13.9,
+            "wind_dir": 260.0,
+            "vil": 70,
+            "echo_top": 9.4,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    13.7563,
+                    142.9307
+                ],
+                [
+                    13.7527,
+                    142.9102
+                ]
+            ],
+            "forecast_path": [
+                [
+                    13.7382,
+                    142.8281
+                ],
+                [
+                    13.7165,
+                    142.7049
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-28-6",
+            "lat": 14.1366,
+            "lon": 144.1406,
+            "center": [
+                14.1366,
+                144.1406
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-28-6.png",
+            "dbz": 33.9,
+            "pressure": 1011.3,
+            "wind_speed": 9.8,
+            "wind_dir": 317.0,
+            "vil": 31,
+            "echo_top": 8.6,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    14.1258,
+                    144.1506
+                ],
+                [
+                    14.1366,
+                    144.1406
+                ]
+            ],
+            "forecast_path": [
+                [
+                    14.1796,
+                    144.1005
+                ],
+                [
+                    14.2441,
+                    144.0403
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-1",
+            "lat": 11.6092,
+            "lon": 106.1279,
+            "center": [
+                11.6092,
+                106.1279
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-1.png",
+            "dbz": 34.7,
+            "pressure": 1014.9,
+            "wind_speed": 3.2,
+            "wind_dir": 16.0,
+            "vil": 43,
+            "echo_top": 8.9,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    11.6046,
+                    106.1266
+                ],
+                [
+                    11.6092,
+                    106.1279
+                ]
+            ],
+            "forecast_path": [
+                [
+                    11.6277,
+                    106.1332
+                ],
+                [
+                    11.6553,
+                    106.1411
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-2",
+            "lat": 11.3939,
+            "lon": 107.666,
+            "center": [
+                11.3939,
+                107.666
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-2.png",
+            "dbz": 61.2,
+            "pressure": 1016.3,
+            "wind_speed": 0.8,
+            "wind_dir": 63.0,
+            "vil": 468,
+            "echo_top": 17.4,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    11.3934,
+                    107.6649
+                ],
+                [
+                    11.3939,
+                    107.666
+                ]
+            ],
+            "forecast_path": [
+                [
+                    11.3961,
+                    107.6703
+                ],
+                [
+                    11.3993,
+                    107.6767
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-3",
+            "lat": 13.1544,
+            "lon": 101.7773,
+            "center": [
+                13.1544,
+                101.7773
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-3.png",
+            "dbz": 60.2,
+            "pressure": 1016.0,
+            "wind_speed": 1.8,
+            "wind_dir": 6.0,
+            "vil": 452,
+            "echo_top": 17.0,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    13.1517,
+                    101.777
+                ],
+                [
+                    13.1544,
+                    101.7773
+                ]
+            ],
+            "forecast_path": [
+                [
+                    13.1651,
+                    101.7784
+                ],
+                [
+                    13.1813,
+                    101.7801
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-4",
+            "lat": 15.0721,
+            "lon": 101.4258,
+            "center": [
+                15.0721,
+                101.4258
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-4.png",
+            "dbz": 46.0,
+            "pressure": 1016.7,
+            "wind_speed": 5.1,
+            "wind_dir": 98.0,
+            "vil": 224,
+            "echo_top": 12.5,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    15.0732,
+                    101.4182
+                ],
+                [
+                    15.0721,
+                    101.4258
+                ]
+            ],
+            "forecast_path": [
+                [
+                    15.0678,
+                    101.4561
+                ],
+                [
+                    15.0615,
+                    101.5016
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-5",
+            "lat": 15.4113,
+            "lon": 108.6328,
+            "center": [
+                15.4113,
+                108.6328
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-5.png",
+            "dbz": 40.6,
+            "pressure": 1016.0,
+            "wind_speed": 14.3,
+            "wind_dir": 336.0,
+            "vil": 138,
+            "echo_top": 10.8,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    15.3917,
+                    108.6415
+                ],
+                [
+                    15.4113,
+                    108.6328
+                ]
+            ],
+            "forecast_path": [
+                [
+                    15.4897,
+                    108.5979
+                ],
+                [
+                    15.6073,
+                    108.5456
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-6",
+            "lat": 15.3689,
+            "lon": 107.5342,
+            "center": [
+                15.3689,
+                107.5342
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-6.png",
+            "dbz": 48.9,
+            "pressure": 1019.3,
+            "wind_speed": 14.7,
+            "wind_dir": 42.0,
+            "vil": 270,
+            "echo_top": 13.4,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    15.3525,
+                    107.5194
+                ],
+                [
+                    15.3689,
+                    107.5342
+                ]
+            ],
+            "forecast_path": [
+                [
+                    15.4344,
+                    107.5932
+                ],
+                [
+                    15.5328,
+                    107.6817
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-7",
+            "lat": 16.2147,
+            "lon": 102.1289,
+            "center": [
+                16.2147,
+                102.1289
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-7.png",
+            "dbz": 54.8,
+            "pressure": 1017.2,
+            "wind_speed": 4.2,
+            "wind_dir": 353.0,
+            "vil": 365,
+            "echo_top": 15.3,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    16.2084,
+                    102.1297
+                ],
+                [
+                    16.2147,
+                    102.1289
+                ]
+            ],
+            "forecast_path": [
+                [
+                    16.2397,
+                    102.1258
+                ],
+                [
+                    16.2772,
+                    102.1212
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-8",
+            "lat": 17.1828,
+            "lon": 111.2256,
+            "center": [
+                17.1828,
+                111.2256
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-8.png",
+            "dbz": 35.1,
+            "pressure": 1014.3,
+            "wind_speed": 35.8,
+            "wind_dir": 49.0,
+            "vil": 49,
+            "echo_top": 9.0,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    17.1476,
+                    111.1851
+                ],
+                [
+                    17.1828,
+                    111.2256
+                ]
+            ],
+            "forecast_path": [
+                [
+                    17.3237,
+                    111.3877
+                ],
+                [
+                    17.5351,
+                    111.6309
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-9",
+            "lat": 17.2248,
+            "lon": 112.2363,
+            "center": [
+                17.2248,
+                112.2363
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-9.png",
+            "dbz": 33.3,
+            "pressure": 1013.8,
+            "wind_speed": 35.4,
+            "wind_dir": 52.0,
+            "vil": 21,
+            "echo_top": 8.4,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    17.1921,
+                    112.1945
+                ],
+                [
+                    17.2248,
+                    112.2363
+                ]
+            ],
+            "forecast_path": [
+                [
+                    17.3556,
+                    112.4037
+                ],
+                [
+                    17.5517,
+                    112.6547
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-10",
+            "lat": 17.3506,
+            "lon": 109.3359,
+            "center": [
+                17.3506,
+                109.3359
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-10.png",
+            "dbz": 35.3,
+            "pressure": 1016.1,
+            "wind_speed": 30.4,
+            "wind_dir": 28.0,
+            "vil": 53,
+            "echo_top": 9.1,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    17.3103,
+                    109.3145
+                ],
+                [
+                    17.3506,
+                    109.3359
+                ]
+            ],
+            "forecast_path": [
+                [
+                    17.5116,
+                    109.4215
+                ],
+                [
+                    17.7532,
+                    109.55
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-11",
+            "lat": 17.3926,
+            "lon": 110.0391,
+            "center": [
+                17.3926,
+                110.0391
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-11.png",
+            "dbz": 55.0,
+            "pressure": 1015.2,
+            "wind_speed": 37.9,
+            "wind_dir": 55.0,
+            "vil": 368,
+            "echo_top": 15.4,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    17.36,
+                    109.9925
+                ],
+                [
+                    17.3926,
+                    110.0391
+                ]
+            ],
+            "forecast_path": [
+                [
+                    17.523,
+                    110.2254
+                ],
+                [
+                    17.7187,
+                    110.5048
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-12",
+            "lat": 17.9369,
+            "lon": 109.292,
+            "center": [
+                17.9369,
+                109.292
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-12.png",
+            "dbz": 33.6,
+            "pressure": 1016.0,
+            "wind_speed": 20.6,
+            "wind_dir": 32.0,
+            "vil": 25,
+            "echo_top": 8.5,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    17.9107,
+                    109.2756
+                ],
+                [
+                    17.9369,
+                    109.292
+                ]
+            ],
+            "forecast_path": [
+                [
+                    18.0417,
+                    109.3575
+                ],
+                [
+                    18.1989,
+                    109.4557
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-13",
+            "lat": 18.4796,
+            "lon": 105.6445,
+            "center": [
+                18.4796,
+                105.6445
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-13.png",
+            "dbz": 35.3,
+            "pressure": 1018.4,
+            "wind_speed": 9.0,
+            "wind_dir": 272.0,
+            "vil": 53,
+            "echo_top": 9.1,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    18.4791,
+                    105.658
+                ],
+                [
+                    18.4796,
+                    105.6445
+                ]
+            ],
+            "forecast_path": [
+                [
+                    18.4815,
+                    105.5905
+                ],
+                [
+                    18.4843,
+                    105.5096
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-14",
+            "lat": 21.1255,
+            "lon": 103.9746,
+            "center": [
+                21.1255,
+                103.9746
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-14.png",
+            "dbz": 34.0,
+            "pressure": 1020.7,
+            "wind_speed": 1.9,
+            "wind_dir": 158.0,
+            "vil": 32,
+            "echo_top": 8.6,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    21.1281,
+                    103.9735
+                ],
+                [
+                    21.1255,
+                    103.9746
+                ]
+            ],
+            "forecast_path": [
+                [
+                    21.1149,
+                    103.9789
+                ],
+                [
+                    21.0991,
+                    103.9853
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-15",
+            "lat": 20.9204,
+            "lon": 106.2598,
+            "center": [
+                20.9204,
+                106.2598
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-15.png",
+            "dbz": 43.2,
+            "pressure": 1018.3,
+            "wind_speed": 4.9,
+            "wind_dir": 184.0,
+            "vil": 180,
+            "echo_top": 11.6,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    20.9277,
+                    106.2603
+                ],
+                [
+                    20.9204,
+                    106.2598
+                ]
+            ],
+            "forecast_path": [
+                [
+                    20.8911,
+                    106.2577
+                ],
+                [
+                    20.8471,
+                    106.2547
+                ]
+            ]
+        },
+        {
+            "id": "Core-Z5-25-16",
+            "lat": 21.9023,
+            "lon": 103.0518,
+            "center": [
+                21.9023,
+                103.0518
+            ],
+            "classification": "Cella Convettiva Intensità >= 32 dBZ",
+            "profile_image": "profili/Core-Z5-25-16.png",
+            "dbz": 33.5,
+            "pressure": 1019.9,
+            "wind_speed": 2.5,
+            "wind_dir": 150.0,
+            "vil": 24,
+            "echo_top": 8.5,
+            "reliability": "99.9%",
+            "eta": "+4h Predittivo",
+            "history_path": [
+                [
+                    21.9055,
+                    103.0499
+                ],
+                [
+                    21.9023,
+                    103.0518
+                ]
+            ],
+            "forecast_path": [
+                [
+                    21.8893,
+                    103.0593
+                ],
+                [
+                    21.8698,
+                    103.0706
                 ]
             ]
         }
